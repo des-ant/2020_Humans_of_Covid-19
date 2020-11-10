@@ -35,9 +35,10 @@ gsap.from(".line-2", {
     scrollTrigger: {
         trigger: ".orange",
         scrub: true,
-        pin: false,
+        pin: true,
         start: "top top",
-        end: "+=100%"
+        end: "+=100%",
+        pinSpacing: false
     },
     scaleX: 0,
     transformOrigin: "left center",
@@ -50,9 +51,10 @@ var tl = gsap.timeline({
     scrollTrigger: {
         trigger: ".purple",
         scrub: true,
-        pin: false,
+        pin: true,
         start: "top top",
-        end: "+=100%"
+        end: "+=100%",
+        pinSpacing: false
     }
 });
 
@@ -65,6 +67,6 @@ tl.from(".purple p", { scale: 0.3, rotation: 45, autoAlpha: 0, ease: "power2" })
 gsap.utils.toArray("nav a").forEach(function(a) {
     a.addEventListener("click", function(e) {
         e.preventDefault();
-        gsap.to(window, { duration: 0, scrollTo: e.target.getAttribute("href") });
+        gsap.to(window, { duration: 0.5, scrollTo: e.target.getAttribute("href") });
     });
 });
