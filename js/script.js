@@ -1,5 +1,9 @@
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
+ScrollTrigger.defaults({
+    toggleActions: "restart pause resume pause"
+});
+
 // scroll down arrow animation
 gsap.to(".arrow", { y: 12, ease: "power1.inOut", repeat: -1, yoyo: true });
 
@@ -31,7 +35,7 @@ gsap.from(".line-2", {
     scrollTrigger: {
         trigger: ".orange",
         scrub: true,
-        pin: true,
+        pin: false,
         start: "top top",
         end: "+=100%"
     },
@@ -46,7 +50,7 @@ var tl = gsap.timeline({
     scrollTrigger: {
         trigger: ".purple",
         scrub: true,
-        pin: true,
+        pin: false,
         start: "top top",
         end: "+=100%"
     }
@@ -61,6 +65,6 @@ tl.from(".purple p", { scale: 0.3, rotation: 45, autoAlpha: 0, ease: "power2" })
 gsap.utils.toArray("nav a").forEach(function(a) {
     a.addEventListener("click", function(e) {
         e.preventDefault();
-        gsap.to(window, { duration: 1, scrollTo: e.target.getAttribute("href") });
+        gsap.to(window, { duration: 0, scrollTo: e.target.getAttribute("href") });
     });
 });

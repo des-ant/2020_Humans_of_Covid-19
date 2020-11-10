@@ -7,31 +7,25 @@ sans-serif;
 
 /* Use imported font in body */
 
-progress {
-    position: fixed;
-    top: 0;
-    left: 0;
-    -webkit-appearance: none;
-    appearance: none;
-    width: 100%;
-    height: 15px;
-    border: none;
-    background: transparent;
-    &::-webkit-progress-bar {
-        background: transparent;
-    }
-    &::-webkit-progress-value {
-        background: linear-gradient(to left, #db38b5, #01b3e3, #25ce7b, #fdc741, #ff6b01, #fc4236);
-        background-attachment: fixed;
-    }
-    &::-moz-progress-bar {
-        background: linear-gradient(to left, #db38b5, #01b3e3, #25ce7b, #fdc741, #ff6b01, #fc4236);
-        background-attachment: fixed;
-    }
+html {
+    scroll-snap-type: y mandatory;
 }
 
 .panel {
-    &.align-top {
+    scroll-snap-align: start;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+    position: relative;
+    box-sizing: border-box;
+    padding: 10px;
+    .align-top {
         align-items: flex-start;
     }
     h1 {
@@ -40,7 +34,7 @@ progress {
         font-weight: 300;
         margin: 0 auto;
     }
-    &.description {
+    .description {
         padding-bottom: 60px;
     }
     p,
@@ -105,26 +99,9 @@ body {
     font-family: $roboto;
 }
 
-.panel {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 600;
-    font-size: 1.5em;
-    text-align: center;
-    color: white;
-    position: relative;
-    box-sizing: border-box;
-    padding: 10px;
-}
-
 body {
     overflow-x: hidden;
     overflow-y: scroll;
-    font-family: $roboto;
-    margin: 0;
     background: linear-gradient(to bottom, #e6c6df, #92d8eb, #afddc6, #f9f1de, #f0c7a9, #f7d6d4);
 }
 
@@ -140,12 +117,7 @@ li {
 
 header {
     position: fixed;
-    top: 0px;
-    left: 0px;
-    padding: 6px 10px 10px 10px;
-    border-bottom-right-radius: 26px;
     z-index: 100;
-    background-color: rgba(0, 0, 0, 0.5);
 }
 
 
@@ -161,7 +133,7 @@ header {
     text-transform: uppercase;
     font-size: 16px;
     overflow: visible;
-    &.arrow {
+    .arrow {
         position: relative;
         top: -4px;
         margin: 0 auto;
@@ -213,11 +185,34 @@ nav {
     transform: translateY(100%);
     transition: all 0.3s;
     outline: none;
-    &.visible {
+    .visible {
         opacity: 1;
         transform: translateY(0);
     }
     &::hover {
         color: rgba(255, 255, 255, 0.9);
+    }
+}
+
+progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 15px;
+    border: none;
+    background: transparent;
+    &::-webkit-progress-bar {
+        background: transparent;
+    }
+    &::-webkit-progress-value {
+        background: linear-gradient(to left, #db38b5, #01b3e3, #25ce7b, #fdc741, #ff6b01, #fc4236);
+        background-attachment: fixed;
+    }
+    &::-moz-progress-bar {
+        background: linear-gradient(to left, #db38b5, #01b3e3, #25ce7b, #fdc741, #ff6b01, #fc4236);
+        background-attachment: fixed;
     }
 }
