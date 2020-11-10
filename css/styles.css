@@ -72,24 +72,6 @@ progress::-moz-progress-bar {
   margin: 0;
 }
 
-/*
-.panel.align-top {}
-
-.panel h1 {}
-
-.panel.description {}
-
-.panel p,
-.panel li {}
-
-.panel p strong,
-.panel li strong {}
-
-.panel p code,
-.panel li code {}
-
-.panel li {}
-*/
 .gray {
   background-color: #777;
   background-image: radial-gradient(circle at 47% 14%, rgba(205, 205, 205, 0.04) 0%, rgba(205, 205, 205, 0.04) 43%, transparent 43%, transparent 100%), radial-gradient(circle at 35% 12%, rgba(215, 215, 215, 0.04) 0%, rgba(215, 215, 215, 0.04) 4%, transparent 4%, transparent 100%), radial-gradient(circle at 1% 35%, rgba(24, 24, 24, 0.04) 0%, rgba(24, 24, 24, 0.04) 37%, transparent 37%, transparent 100%), radial-gradient(circle at 21% 1%, rgba(0, 0, 0, 0.04) 0%, rgba(0, 0, 0, 0.04) 26%, transparent 26%, transparent 100%), radial-gradient(circle at 23% 82%, rgba(249, 249, 249, 0.04) 0%, rgba(249, 249, 249, 0.04) 60%, transparent 60%, transparent 100%), radial-gradient(circle at 11% 54%, rgba(251, 251, 251, 0.04) 0%, rgba(251, 251, 251, 0.04) 23%, transparent 23%, transparent 100%), radial-gradient(circle at 69% 68%, rgba(234, 234, 234, 0.04) 0%, rgba(234, 234, 234, 0.04) 10%, transparent 10%, transparent 100%), -webkit-gradient(linear, left top, right top, from(#777), to(#606060));
@@ -184,13 +166,6 @@ header {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* HEADINGS */
-.header-section {
-  padding: 0 15px;
-  text-align: center;
-  margin: 40vh auto 50vh;
-}
-
 /* SCROLL DOWN */
 .scroll-down {
   position: absolute;
@@ -205,7 +180,7 @@ header {
   overflow: visible;
 }
 
-.scroll-down .arrow {
+.scroll-down.arrow {
   position: relative;
   top: -4px;
   margin: 0 auto;
@@ -245,7 +220,7 @@ nav a {
   text-decoration: none;
 }
 
-nav a:hover {
+nav a::hover {
   text-decoration: underline;
 }
 
@@ -273,7 +248,7 @@ nav a:hover {
           transform: translateY(0);
 }
 
-.Scroll-to-top:hover {
+.Scroll-to-top::hover {
   color: rgba(255, 255, 255, 0.9);
 }
 /*# sourceMappingURL=styles.css.map */

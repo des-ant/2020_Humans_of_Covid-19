@@ -149,15 +149,6 @@ header {
 }
 
 
-/* HEADINGS */
-
-.header-section {
-    padding: 0 15px;
-    text-align: center;
-    margin: 40vh auto 50vh;
-}
-
-
 /* SCROLL DOWN */
 
 .scroll-down {
@@ -170,16 +161,15 @@ header {
     text-transform: uppercase;
     font-size: 16px;
     overflow: visible;
-}
-
-.scroll-down .arrow {
-    position: relative;
-    top: -4px;
-    margin: 0 auto;
-    width: 20px;
-    height: 20px;
-    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KPHBhdGggZmlsbD0iYmxhY2siIGQ9Ik00ODMuMiwxOTIuMmMtMjAuNS0yMC41LTUzLjUtMjAuOC03My43LTAuNkwyNTcsMzQ0LjFMMTA0LjUsMTkxLjZjLTIwLjItMjAuMi01My4yLTE5LjktNzMuNywwLjYKCWMtMjAuNSwyMC41LTIwLjgsNTMuNS0wLjYsNzMuN2wxOTAsMTkwYzEwLjEsMTAuMSwyMy40LDE1LjEsMzYuOCwxNWMxMy4zLDAuMSwyNi43LTQuOSwzNi44LTE1bDE5MC0xOTAKCUM1MDMuOSwyNDUuNyw1MDMuNywyMTIuNyw0ODMuMiwxOTIuMnoiLz4KPC9zdmc+);
-    background-size: contain;
+    &.arrow {
+        position: relative;
+        top: -4px;
+        margin: 0 auto;
+        width: 20px;
+        height: 20px;
+        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KPHBhdGggZmlsbD0iYmxhY2siIGQ9Ik00ODMuMiwxOTIuMmMtMjAuNS0yMC41LTUzLjUtMjAuOC03My43LTAuNkwyNTcsMzQ0LjFMMTA0LjUsMTkxLjZjLTIwLjItMjAuMi01My4yLTE5LjktNzMuNywwLjYKCWMtMjAuNSwyMC41LTIwLjgsNTMuNS0wLjYsNzMuN2wxOTAsMTkwYzEwLjEsMTAuMSwyMy40LDE1LjEsMzYuOCwxNWMxMy4zLDAuMSwyNi43LTQuOSwzNi44LTE1bDE5MC0xOTAKCUM1MDMuOSwyNDUuNyw1MDMuNywyMTIuNyw0ODMuMiwxOTIuMnoiLz4KPC9zdmc+);
+        background-size: contain;
+    }
 }
 
 .line {
@@ -192,30 +182,21 @@ header {
     background-color: rgba(255, 255, 255, 1);
 }
 
-
-/* Not great browser support :(
-html {
-  scroll-behavior: smooth;
-} 
-*/
-
 nav {
     position: fixed;
     top: 10px;
     right: 10px;
     background: black;
     padding: 0px 10px;
-}
-
-nav a {
-    color: white;
-    font-size: 1.3em;
-    line-height: 1.7;
-    text-decoration: none;
-}
-
-nav a:hover {
-    text-decoration: underline;
+    a {
+        color: white;
+        font-size: 1.3em;
+        line-height: 1.7;
+        text-decoration: none;
+        &::hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 .Scroll-to-top {
@@ -232,13 +213,11 @@ nav a:hover {
     transform: translateY(100%);
     transition: all 0.3s;
     outline: none;
-}
-
-.Scroll-to-top.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.Scroll-to-top:hover {
-    color: rgba(255, 255, 255, 0.9);
+    &.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    &::hover {
+        color: rgba(255, 255, 255, 0.9);
+    }
 }
