@@ -3,76 +3,138 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="designer" content="Anthony Yip">
-    <!-- Required imported CSS files -->
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <!-- Responsive viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="designer" content="Anthony Yip">
+  <!-- Required imported CSS files -->
 
-    <!-- Reset CSS styles-->
-    <link rel="stylesheet" href="css/reset.css" />
-    <!-- Main CSS file -->
-    <link rel="stylesheet" href="css/styles.css" />
-    <!-- Title -->
-    <title>Humans of COVID-19</title>
+  <!-- Reset CSS styles-->
+  <link rel="stylesheet" href="css/reset.css" />
+  <!-- Main CSS file -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Title -->
+  <title>Humans of COVID-19</title>
 </head>
 
-<body class="container" id="top">
-    <header>
-        <!-- Progress Bar -->
-        <progress max="100" value="0"></progress>
+<body>
+  <header>
+    <!-- Progress Bar -->
+    <progress max="100" value="0"></progress>
 
-        <!-- Navigation Bar -->
-        <nav>
-            <div><a href="#one">Section one</a></div>
-            <div><a href="#two">Section two</a></div>
-            <div><a href="#three">Section three</a></div>
-            <div><a href="#four">Section four</a></div>
-            <div><a href="#five">Section five</a></div>
-        </nav>
-    </header>
+    <!-- Navigation Bar -->
+    <nav class="sidebar">
+      <div><a href="#s1">Section one</a></div>
+      <div><a href="#s2">Section two</a></div>
+      <div><a href="#s3">Section three</a></div>
+      <div><a href="#s4">Section four</a></div>
+      <div><a href="#s5">Section five</a></div>
+    </nav>
 
-    <!-- Main Content-->
+  </header>
 
-    <div id="one" class="description panel blue">
-        <div>
-            <h1>Navigation links with smooth scrolling</h1>
-            <p>ScrollTrigger works great with navigation links within the page! Try clicking one of the links above and see how ScrollTrigger stays perfectly synced.</p>
-            <div class="scroll-down">Scroll down
-                <div class="arrow"></div>
-            </div>
+  <!-- Main Content-->
+  <main>
+    <article id="s1">
+      <div class="panel">
+        <div class="content title start">
+          <h1>I’m a Doctor Who Caught Coronavirus.</h1>
+          <p>Here’s What Recovery Was Really Like, Day by Day.</p>
+          <q>“The most common symptoms of COVID-19 didn’t hit me until
+                 four days into my illness—and I never had a fever”</q>
+          <p>By Jehanne Julien-Banica As Told To Lauren Krouse May 15, 2020</p>
+          <div class="scroll-down">Scroll down
+            <div class="arrow"></div>
+          </div>
         </div>
-    </div>
+      </div>
+    </article>
 
-    <section id="two" class="panel red">
-        <p><span class="line line-1"></span>This line's animation will begin when it enters the viewport and finish when its top edge hits the top of the viewport, staying perfectly in sync with the scrollbar because it has <code>scrub:&nbsp;true</code></p>
-    </section>
+    <article id="s2">
+      <div class="panel">
+        <div class="content title">
+          <h1>Day 1-2</h1>
+          <p>After a hectic work week, I had the weekend off and spent the entire time sleeping or sitting around.</p>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="content title">
+          <h1>Day 124214</h1>
+          <p>After a hectic work week, I had the weekend off and spent the entire time sleeping or sitting around.</p>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="content story">
+          <div class="text">
+            <p>Usually I’m not one to take naps, but I hardly moved for two days. I thought maybe I was overwhelmed and this was my body’s way of telling me that I needed a break.</p>
+          </div>
+          <div class="animation">
+            <svg width="100" height="100">
+              <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="content story">
+          <div class="text">
+            <p>I also had night sweats. Since I have a history of migraines and don’t tolerate the heat well, this didn’t seem odd to me. But looking back, these were more pronounced than usual.</p>
+          </div>
+          <div class="animation">
+            <svg width="100" height="100">
+              <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </article>
 
+    <article id="s3">
+      <div class="panel">
+        <div class="content title">
+          <h1>Day 3</h1>
+          <p>When I returned to work on Monday, I began to feel faint in the middle of a 10-hour shift.</p>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="content story">
+          <div class="text">
+            <p>That morning, I was in full PPE screening patients outside. By then, we were seeing close to 200 patients per week. I was halfway through the 49 patients I had on my schedule for that day when I started feeling off.</p>
+          </div>
+          <div class="animation">
+            <svg width="100" height="100">
+              <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="content story">
+          <div class="text">
+            <p>That morning, I was in full PPE screening patients outside. By then, we were seeing close to 200 patients per week. I was halfway through the 49 patients I had on my schedule for that day when I started feeling off.</p>
+          </div>
+          <div class="animation">
+            <svg width="100" height="100">
+              <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </article>
 
-    <section id="three" class="panel orange">
-        <p><span class="line line-2"></span>This orange panel gets pinned when its top edge hits the top of the viewport, then the line's animation is linked with the scroll position until it has traveled 100% of the viewport's height (<code>end: "+=100%"</code>),
-            then the orange panel is unpinned and normal scrolling resumes. Padding is added automatically to push the rest of the content down so that it catches up with the scroll when it unpins. You can set <code>pinSpacing: false</code> to prevent
-            that if you prefer.</p>
-    </section>
+    <article id="s6" class="panel">
+      DONE!
+      <button class="Scroll-to-top visible">Scroll To Top</button>
+    </article>
 
+  </main>
 
-    <section id="four" class="panel purple">
-        <p><span class="line line-3"></span>This panel gets pinned in a similar way, and has a more involved animation that's wrapped in a timeline, fading the background color and animating the transforms of the paragraph in addition to the line, all synced
-            with the scroll position perfectly.</p>
-    </section>
-
-    <section id="five" class="panel gray">
-        DONE!
-    </section>
-
-
-    <button class="Scroll-to-top">Scroll To Top</button>
-
-    <!-- Required imported script files -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
-    <script src="js/script.js"></script>
+  <!-- Required imported script files -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+  <script src="js/script.js"></script>
 
 </body>
 
