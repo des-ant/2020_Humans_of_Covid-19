@@ -54,7 +54,7 @@ ScrollTrigger.create({
   },
   pin: true,
   pinSpacing: false,
-  markers: true,
+  // markers: true,
   id: 'svg-pin-1'
 });
 
