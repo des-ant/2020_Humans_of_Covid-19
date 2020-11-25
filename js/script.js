@@ -48,13 +48,14 @@ ScrollTrigger.create({
   start: 'center center',
   end: () => {
     const height = window.innerHeight;
-    const chartHeight = document.querySelector('#svg-1')
+    const svgHeight = document.querySelector('#svg-1')
       .offsetHeight;
-    return `top ${chartHeight + (height - chartHeight) / 2}px`;
+    // return `top ${svgHeight + (height) / 2}px`;
+    return `top ${svgHeight + (height - svgHeight) / 2}px`;
   },
   pin: true,
   pinSpacing: false,
-  // markers: true,
+  markers: true,
   id: 'svg-pin-1'
 });
 
