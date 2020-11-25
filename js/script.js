@@ -43,19 +43,19 @@ gsap.utils.toArray("nav a").forEach(function (a) {
 // We use a function to define the end point to line up the top of the
 // title box with the bottom of the svg
 ScrollTrigger.create({
-  trigger: '#svg-1',
+  trigger: '#svg-1-1',
   endTrigger: '#title-2',
   start: 'center center',
   end: () => {
     const height = window.innerHeight;
-    const svgHeight = document.querySelector('#svg-1')
+    const svgHeight = document.querySelector('#svg-1-1')
       .offsetHeight;
     return `top ${svgHeight + (height - svgHeight) / 2}px`;
   },
   pin: true,
   pinSpacing: false,
   // markers: true,
-  id: 'svg-pin-1'
+  id: 'svg-pin-1-1'
 });
 
 // sets up the class toggle on each scrolling text box

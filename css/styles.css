@@ -33,7 +33,7 @@ h4 {
   line-height: 1.6em;
 }
 
-p {
+p, li {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size: 1em;
   line-height: 1.625em;
@@ -45,12 +45,17 @@ p {
   line-height: 1.692em;
 }
 
+ul {
+  list-style-type: circle;
+  list-style-position: inside;
+}
+
 /* ####################### */
 /* Styles for page content */
 /* ####################### */
 /* Style for title page */
 .title {
-  background-color: grey;
+  background-color: lightgray;
   width: 100%;
 }
 

@@ -40,7 +40,7 @@ h4 {
   line-height: 1.6em;
 }
 
-p {
+p, li {
   font-family: $roboto;
   font-size: 1em;
   line-height: 1.625em;
@@ -52,15 +52,20 @@ p {
   line-height: 1.692em;
 }
 
+ul {
+  list-style-type: circle;
+  list-style-position: inside;
+
+}
+
 /* ####################### */
 /* Styles for page content */
 /* ####################### */
 
 /* Style for title page */
 .title {
-  background-color: grey;
+  background-color: lightgray;
   width: 100%;
-  // margin: 3em 0;
   .title-content {
     max-width: 30em;
     padding: \min(15vh, 5em) 1.25em;
