@@ -56,7 +56,7 @@ p {
 
 .title .title-content {
   max-width: 30em;
-  padding: 10em 1.25em;
+  padding: \min(15vh, 5em) 1.25em;
   margin: 0 auto;
 }
 

@@ -39,7 +39,7 @@ gsap.utils.toArray("nav a").forEach(function (a) {
 });
 
 // This pins the SVG animation wrapper when it hits the center of the viewport
-// and releases the pin when the next title meets the bottom of the svg
+// and releases the pin when the final textbox meets the bottom of the svg
 // We use a function to define the end point to line up the top of the
 // title box with the bottom of the svg
 ScrollTrigger.create({
@@ -50,12 +50,11 @@ ScrollTrigger.create({
     const height = window.innerHeight;
     const svgHeight = document.querySelector('#svg-1')
       .offsetHeight;
-    // return `top ${svgHeight + (height) / 2}px`;
     return `top ${svgHeight + (height - svgHeight) / 2}px`;
   },
   pin: true,
   pinSpacing: false,
-  markers: true,
+  // markers: true,
   id: 'svg-pin-1'
 });
 
