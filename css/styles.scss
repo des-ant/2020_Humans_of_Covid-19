@@ -1,13 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
 // Variables
 $roboto: 'Roboto',
 Helvetica,
 Arial,
 sans-serif;
 
+$lora: 'Lora',
+serif;
+
+$h1-lh: 1.524em;
+$h2-lh: 1.545em;
+$h3-lh: 1.577em;
+$h4-lh: 1.6em;
+$p-lh: 1.625em;
+$p2-lh: 1.692em;
+
 $svg-width: 40em;
 $svg-height: $svg-width * 9 / 16;
 $step-margin-unit: 2em;
+
+$coolors-1: #4E3D42;
+$coolors-2: #6D6466;
+$coolors-3: #9F9F92;
+$coolors-4: #C9D5B5;
+$coolors-5: #E3DBDB;
+
+$bgcolor: #E3DBDB;
+$transparent: rgba(255, 255, 255, 0);
+
+$color-1: #C9D5B5;
+$color-2: #E3DBDB;
+
+$size: 3em;
+$big-size: $size*2;
+$min: $size*.3;
+$max: $size*.5;
 
 /* Responsive height */
 html,
@@ -16,44 +45,65 @@ body {
   margin: 0;
 }
 
+body {
+  background-color: $coolors-5;
+}
+
 /* ################# */
 /* Typography styles */
 /* ################# */
 
-h1, h2, h3, h4 {
-  font-family: $roboto;
+h1,
+h2,
+h3,
+h4 {
+  font-family: $lora;
+  font-weight: 400;
 }
 
 h1 {
   font-size: 2.625em;
-  line-height: 1.524em;
+  line-height: $h1-lh;
+  margin-bottom: $h1-lh / 4;
 }
 
 h2 {
   font-size: 2.063em;
-  line-height: 1.545em;
+  line-height: $h2-lh;
+  margin-bottom: $h2-lh / 4;
 }
 
 h3 {
   font-size: 1.625em;
-  line-height: 1.577em;
+  line-height: $h3-lh;
+  margin-bottom: $h3-lh / 4;
 }
 
 h4 {
   font-size: 1.25em;
-  line-height: 1.6em;
+  line-height: $h4-lh;
+  margin-bottom: $h4-lh / 4;
 }
 
-p, li {
+p,
+li {
   font-family: $roboto;
   font-size: 1em;
-  line-height: 1.625em;
+  line-height: $p-lh;
+}
+
+ul {
+  margin-bottom: $p-lh / 2;
+}
+
+p {
+  margin-bottom: $p-lh / 2;
 }
 
 .p2 {
   font-family: $roboto;
   font-size: 0.813em;
-  line-height: 1.692em;
+  line-height: $p2-lh;
 }
 
 ul {
@@ -68,12 +118,43 @@ ul {
 
 /* Style for title page */
 .title {
-  background-color: lightgray;
+  background-color: $coolors-5;
   width: 100%;
+
   .title-content {
     max-width: 30em;
     padding: \min(15vh, 5em) 1.25em;
     margin: 0 auto;
+  }
+}
+
+#title-0 {
+  background: linear-gradient(68deg,
+    $color-1 $min,
+    $transparent $min*1.1) $size -#{$size},
+  linear-gradient(-68deg,
+    $color-1 $min,
+    $transparent $min*1.1) -#{$size} -#{$size},
+  radial-gradient(circle,
+    $color-1 $min,
+    $transparent $min*1.1) 0 0,
+
+  linear-gradient(68deg,
+    $color-2 $min,
+    $transparent $min*1.1) 0 0,
+  linear-gradient(-68deg,
+    $color-2 $min,
+    $transparent $min*1.1) 0 0,
+  radial-gradient(circle,
+    $color-2 $min,
+    $transparent $min*1.1) $size $size;
+  background-size: $big-size $big-size;
+  background-color: $bgcolor;
+  background-repeat: repeat;
+  .title-content {
+    h1, h3, p {
+      background-color: $coolors-5;
+    }
   }
 }
 
@@ -94,6 +175,10 @@ ul {
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   opacity: 0.2;
+
+  p {
+    margin-bottom: 0;
+  }
 }
 
 .step-svg {
@@ -108,9 +193,10 @@ ul {
   max-width: $svg-width;
   height: $svg-height;
   margin: 0 auto 0 auto;
-  border: 1px solid black;
-  background-color: #db38b5;
+  // border: 1px solid black;
+  // background-color: #db38b5;
   z-index: -1;
+
   svg {
     width: 100%;
     height: 100%;
@@ -125,17 +211,21 @@ ul {
     stroke: #eac179;
     stroke-miterlimit: 10
   }
+
   .st3 {
     fill: #533814
   }
+
   .st6 {
     fill: #e4273a;
     stroke: #c42127;
     stroke-miterlimit: 10
   }
+
   .st7 {
     fill: #eecb9b
   }
+
   .st8 {
     fill: #ed1c24
   }
@@ -161,6 +251,7 @@ header {
   text-transform: uppercase;
   font-size: 16px;
   overflow: visible;
+
   .arrow {
     position: relative;
     top: -4px;
@@ -183,15 +274,18 @@ header {
   left: 10px;
   background: black;
   padding: 0px 10px;
+
   a {
     color: white;
     font-size: 1.3em;
     line-height: 1.7;
     text-decoration: none;
+
     &::hover {
       text-decoration: underline;
     }
   }
+
   display: none;
 }
 
@@ -205,13 +299,16 @@ progress {
   height: 10px;
   border: none;
   background: transparent;
+
   &::-webkit-progress-bar {
     background: transparent;
   }
+
   &::-webkit-progress-value {
     background: linear-gradient(to left, #db38b5, #01b3e3, #25ce7b, #fdc741, #ff6b01, #fc4236);
     background-attachment: fixed;
   }
+
   &::-moz-progress-bar {
     background: linear-gradient(to left, #db38b5, #01b3e3, #25ce7b, #fdc741, #ff6b01, #fc4236);
     background-attachment: fixed;

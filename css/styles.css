@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap");
 /* Responsive height */
 html,
 body {
@@ -6,37 +7,58 @@ body {
   margin: 0;
 }
 
+body {
+  background-color: #E3DBDB;
+}
+
 /* ################# */
 /* Typography styles */
 /* ################# */
-h1, h2, h3, h4 {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Lora", serif;
+  font-weight: 400;
 }
 
 h1 {
   font-size: 2.625em;
   line-height: 1.524em;
+  margin-bottom: 0.381em;
 }
 
 h2 {
   font-size: 2.063em;
   line-height: 1.545em;
+  margin-bottom: 0.38625em;
 }
 
 h3 {
   font-size: 1.625em;
   line-height: 1.577em;
+  margin-bottom: 0.39425em;
 }
 
 h4 {
   font-size: 1.25em;
   line-height: 1.6em;
+  margin-bottom: 0.4em;
 }
 
-p, li {
+p,
+li {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size: 1em;
   line-height: 1.625em;
+}
+
+ul {
+  margin-bottom: 0.8125em;
+}
+
+p {
+  margin-bottom: 0.8125em;
 }
 
 .p2 {
@@ -55,7 +77,7 @@ ul {
 /* ####################### */
 /* Style for title page */
 .title {
-  background-color: lightgray;
+  background-color: #E3DBDB;
   width: 100%;
 }
 
@@ -63,6 +85,17 @@ ul {
   max-width: 30em;
   padding: \min(15vh, 5em) 1.25em;
   margin: 0 auto;
+}
+
+#title-0 {
+  background: linear-gradient(68deg, #C9D5B5 0.9em, rgba(255, 255, 255, 0) 0.99em) 3em -3em, linear-gradient(-68deg, #C9D5B5 0.9em, rgba(255, 255, 255, 0) 0.99em) -3em -3em, radial-gradient(circle, #C9D5B5 0.9em, rgba(255, 255, 255, 0) 0.99em) 0 0, linear-gradient(68deg, #E3DBDB 0.9em, rgba(255, 255, 255, 0) 0.99em) 0 0, linear-gradient(-68deg, #E3DBDB 0.9em, rgba(255, 255, 255, 0) 0.99em) 0 0, radial-gradient(circle, #E3DBDB 0.9em, rgba(255, 255, 255, 0) 0.99em) 3em 3em;
+  background-size: 6em 6em;
+  background-color: #E3DBDB;
+  background-repeat: repeat;
+}
+
+#title-0 .title-content h1, #title-0 .title-content h3, #title-0 .title-content p {
+  background-color: #E3DBDB;
 }
 
 /* Styles for the scrolling text boxes */
@@ -85,6 +118,10 @@ ul {
   opacity: 0.2;
 }
 
+.step p {
+  margin-bottom: 0;
+}
+
 .step-svg {
   margin: 2em auto 2em auto;
 }
@@ -96,8 +133,6 @@ ul {
   max-width: 40em;
   height: 22.5em;
   margin: 0 auto 0 auto;
-  border: 1px solid black;
-  background-color: #db38b5;
   z-index: -1;
 }
 
