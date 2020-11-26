@@ -92,7 +92,10 @@ ul {
 
 /* Styles for the SVG chart */
 svg {
-  margin: 1.25em;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: block;
 }
 
 .svg-wrapper {
