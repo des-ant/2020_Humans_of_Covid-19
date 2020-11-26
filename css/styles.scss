@@ -5,6 +5,10 @@ Helvetica,
 Arial,
 sans-serif;
 
+$svg-width: 40em;
+$svg-height: $svg-width * 9 / 16;
+$step-margin-unit: 2em;
+
 /* Responsive height */
 html,
 body {
@@ -82,10 +86,10 @@ ul {
   width: 100%;
   max-width: 30em;
   padding: 1.25em;
-  margin-top: 5vh;
+  margin-top: $step-margin-unit;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: \max(30vh, calc(5vh + 15em));
+  margin-bottom: \max($svg-height + $step-margin-unit, $step-margin-unit + 15em);
   border: 5px solid purple;
   border-radius: 20px;
   background-color: white;
@@ -94,28 +98,26 @@ ul {
 }
 
 .step-svg {
-  margin: 5vh auto 5vh auto;
+  margin: $step-margin-unit auto $step-margin-unit auto;
 }
 
 /* Styles for the SVG chart */
-svg {
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  // margin: 1.25em;
-  display: block;
-}
 
 .svg-wrapper {
   position: relative;
-  height: 25vh;
-  min-height: 15em;
   width: 100%;
-  max-width: 30em;
+  max-width: $svg-width;
+  height: $svg-height;
   margin: 0 auto 0 auto;
   border: 1px solid black;
   background-color: #db38b5;
   z-index: -1;
+  svg {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+  }
 }
 
 #svg-1-1 {
@@ -139,12 +141,6 @@ svg {
     fill: #ed1c24
   }
 }
-
-// #svg-1-1 {
-//   .st0 {
-//     color: white;
-//   }
-// }
 
 /* HEADER */
 
