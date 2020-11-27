@@ -24,7 +24,7 @@ gsap.utils.toArray('.step').forEach(step => {
   ScrollTrigger.create({
     trigger: step,
     start: 'top 80%',
-    end: 'center top',
+    end: 'bottom 20%',
     toggleClass: 'active',
     // markers: true,
     id: 'toggle-active-class'
@@ -66,5 +66,5 @@ var t1 = gsap.timeline({
     id: 'svg-1-1'
   }
 });
-t1.to("#svg-1-1 #arms", {duration: 1, rotation: 90, x: 100}, 0)
-t1.to("#svg-1-1 #skirt", {duration: 1, scale: 2, ease:"back"}, 0.5)
+// t1.to("#svg-1-1 #arms", {duration: 1, rotation: 90, x: 100}, 0)
+// t1.to("#svg-1-1 #skirt", {duration: 1, scale: 2, ease:"back"}, 0.5)
