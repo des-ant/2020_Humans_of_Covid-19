@@ -27,18 +27,28 @@
     <progress max="100" value="0"></progress>
 
     <!-- Navigation Bar -->
-    <nav class="sidebar">
-      <div><a href="#s1">Section one</a></div>
-      <div><a href="#s2">Section two</a></div>
-      <div><a href="#s3">Section three</a></div>
-      <div><a href="#s4">Section four</a></div>
-      <div><a href="#s5">Section five</a></div>
+    <nav class="sidebar" id="mySidebar">
+      <ol>
+        <li><a href="javascript:void(0)" class="closebtn"
+            onclick="closeNav()">&times;</a></li>
+        <li><a href="#title-0">Start of page</a></li>
+        <li><a href="#title-1">&nbsp;&nbsp;Day 1-2</a></li>
+        <li><a href="#title-2">&nbsp;&nbsp;Day 3</a></li>
+        <li><a href="#title-3">&nbsp;&nbsp;Day 4-6</a></li>
+        <li><a href="#title-4">&nbsp;&nbsp;Day 7-10</a></li>
+        <li><a href="#title-5">&nbsp;&nbsp;Day 11-15</a></li>
+        <li><a href="#title-6">My Covid Experience</a></li>
+        <li><a href="#title-7">Mythbusting</a></li>
+        <li><a href="#title-8">Common Symptoms</a></li>
+        <li><a href="#title-9">How to get tested</a></li>
+      </ol>
     </nav>
 
   </header>
 
   <!-- Main Content-->
   <main>
+    <button class="openbtn" onclick="openNav()">&#9776;</button>
     <article>
       <!-- Title Page -->
       <section class="title" id="title-0">
@@ -58,7 +68,7 @@
       <!-- ###################################################### -->
       <!-- #                    Story Part 1                    # -->
       <!-- ###################################################### -->
-      <section class="title" id="title-1">
+      <section class="title title-day" id="title-1">
         <div class="title-content">
           <h1>Day 1-2</h1>
           <p>After a hectic work week, I had the weekend off and spent the
@@ -118,17 +128,18 @@
           don’t tolerate the heat well, this didn’t seem odd to me. But looking
           back, these were more pronounced than usual.</p>
         </div>
+        <div class="svg-end" id="svg-end-1-1"></div>
       </section>
-      <section class="title" id="title-2">
+      <!-- ###################################################### -->
+      <!-- #                    Story Part 2                    # -->
+      <!-- ###################################################### -->
+      <section class="title title-day" id="title-2">
         <div class="title-content">
           <h1>Day 3</h1>
           <p>When I returned to work on Monday, I began to feel faint in the
           middle of a 10-hour shift.</p>
         </div>
       </section>
-      <!-- ###################################################### -->
-      <!-- #                    Story Part 2                    # -->
-      <!-- ###################################################### -->
       <section class="scroll-steps">
         <div class="step step-svg" id="step-2-1">
           <p>That morning, I was in full PPE screening patients outside. By
@@ -185,6 +196,7 @@
           something was closing in on me. According to my coworkers, I became
           pale. I don’t remember much after that.</p>
         </div>
+        <div class="svg-end" id="svg-end-2-1"></div>
         <div class="step step-svg" id="step-2-4">
           <p>My colleagues sat me in a chair and checked my vitals. Someone must
           have helped me remove my PPE, and they called my husband to come pick
@@ -309,17 +321,18 @@
           <p>On the ride home, I vaguely remember noticing how empty the highway
           was, without any sign of life.</p>
         </div>
+        <div class="svg-end" id="svg-end-2-5"></div>
       </section>
-      <section class="title" id="title-3">
+      <!-- ###################################################### -->
+      <!-- #                    Story Part 3                    # -->
+      <!-- ###################################################### -->
+      <section class="title title-day" id="title-3">
         <div class="title-content">
           <h1>Day 4-6</h1>
           <p>The most well-known symptoms of COVID-19 didn’t hit me until four
           days into my illness.</p>
         </div>
       </section>
-      <!-- ###################################################### -->
-      <!-- #                    Story Part 3                    # -->
-      <!-- ###################################################### -->
       <section class="scroll-steps">
         <div class="step step-svg" id="step-3-1">
           <p>After I got home, I self-isolated in my bedroom. My husband and I
@@ -465,6 +478,7 @@
           wore surgical face masks. Every night, he slept on the floor beside
           our bed. I hardly got up for the next four days.</p>
         </div>
+        <div class="svg-end" id="svg-end-3-2"></div>
         <div class="step step-svg" id="step-3-5">
           <p>My symptoms were the most severe in the mornings. It was the
           weirdest thing. I’d sleep really well—six to eight hours a night,
@@ -511,6 +525,7 @@
           soreness you get from strep throat or heartburn. I felt as if I was
           inhaling hot air that scratched me up inside.</p>
         </div>
+        <div class="svg-end" id="svg-end-3-5"></div>
         <div class="step step-svg" id="step-3-7">
           <p>I didn’t have much of an appetite for solid food and ended up
           losing a total of eight pounds during the course of my illness. My
@@ -572,7 +587,7 @@
       <!-- ###################################################### -->
       <!-- #                    Story Part 4                    # -->
       <!-- ###################################################### -->
-      <section class="title" id="title-4">
+      <section class="title title-day" id="title-4">
         <div class="title-content">
           <h1>Day 7-10</h1>
           <p>For me, these were the hardest days to get through.</p>
@@ -717,6 +732,7 @@
           pretty much subsided until the next morning, but I still had trouble
           breathing, especially when I tried to walk upstairs.</p>
         </div>
+        <div class="svg-end" id="svg-end-4-3"></div>
         <div class="step step-svg" id="step-4-5">
           <p>In researching the disease, I’d read that some doctors recommended
           breathing exercises to help improve your lung function while you have
@@ -755,7 +771,7 @@
       <!-- ###################################################### -->
       <!-- #                    Story Part 5                    # -->
       <!-- ###################################################### -->
-      <section class="title" id="title-5">
+      <section class="title title-day" id="title-5">
         <div class="title-content">
           <h1>Day 11-15</h1>
           <p>About 10 days into my illness, my symptoms began to improve.</p>
@@ -837,11 +853,12 @@
           screening to clear me for work.
           </p>
         </div>
+        <div class="svg-end" id="svg-end-5-1"></div>
       </section>
       <!-- ###################################################### -->
       <!-- #                    Story Part 6                    # -->
       <!-- ###################################################### -->
-      <section class="title" id="title-6">
+      <section class="title title-day" id="title-6">
         <div class="title-content">
           <h1>My COVID-19 experience</h1>
           <p>Having COVID-19 was a frightening experience. It’s a very
@@ -916,11 +933,12 @@
           shown any signs of the virus.
           </p>
         </div>
+        <div class="svg-end" id="svg-end-6-1"></div>
       </section>
       <!-- ###################################################### -->
       <!-- #                    Story Part 7                    # -->
       <!-- ###################################################### -->
-      <section class="title" id="title-7">
+      <section class="title title-day" id="title-7">
         <div class="title-content">
           <h1>Mythbusting</h1>
           <h3>FACT: Thermal scanners CANNOT detect COVID-19</h3>

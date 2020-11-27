@@ -18,8 +18,9 @@ $p-lh: 1.625em;
 $p2-lh: 1.692em;
 
 $svg-width: 40em;
-$svg-height: $svg-width * 9 / 16;
+$svg-height: calc(#{$svg-width} * 9 / 16);
 $step-margin-unit: 2em;
+$step-margin-bottom: calc(#{$svg-height} + #{$step-margin-unit});
 
 $coolors-1: #4E3D42;
 $coolors-2: #6D6466;
@@ -108,9 +109,7 @@ ul {
 /* Style for title page */
 
 .title {
-  // background-color: $coolors-5;
   width: 100%;
-  // border: 1px solid black;
   .title-content {
     max-width: 30em;
     padding: \min(15vh, 5em) 1.25em;
@@ -118,34 +117,22 @@ ul {
   }
 }
 
-#title-0 {
-
-  // background-color: $coolors-5;
-  // background-image:
-  // linear-gradient(90deg, transparent 79px, $coolors-4 79px, $coolors-4 81px, transparent 81px),
-  // linear-gradient($coolors-4 .1em, transparent .1em);
-  // background-size: 100% 1.2em;
-  .title-content {
-
-    h1,
-    h3,
-    p {
-      // background-color: $coolors-5;
-    }
-  }
+.title-day {
+  margin-top: $step-margin-unit;
 }
 
 /* Styles for the scrolling text boxes */
+.scroll-steps {
+  display: flex;
+  flex-direction: column;
+}
 
 .step {
+  display: block;
   width: 100%;
   max-width: 30em;
   padding: 1.25em;
-  margin-top: $step-margin-unit;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: $svg-height + $step-margin-unit;
-  // margin-bottom: \max($svg-height + $step-margin-unit, $step-margin-unit + 15em);
+  margin: $step-margin-unit auto $step-margin-bottom auto;
   background-color: white;
   box-shadow: 2px 2px rgba(0, 0, 0, .25);
   transition: all .4s ease;
@@ -159,6 +146,11 @@ ul {
   margin: $step-margin-unit auto $step-margin-unit auto;
 }
 
+.svg-end {
+  display: block;
+  height: 0;
+}
+
 .active {
   box-shadow: 7px 7px rgba(0, 0, 0, .15);
 }
@@ -166,13 +158,12 @@ ul {
 /* Styles for the SVG chart */
 
 .svg-wrapper {
+  display: block;
   position: relative;
   width: 100%;
   max-width: $svg-width;
   height: $svg-height;
   margin: 0 auto 0 auto;
-  // border: 1px solid black;
-  // background-color: #db38b5;
   z-index: -1;
 
   svg {
@@ -477,7 +468,6 @@ ul {
 }
 
 #svg-4-1 {
-
   .st0,
   .st1 {
     fill: #eecb9b;
@@ -707,31 +697,90 @@ header {
   }
 }
 
+// .sidebar {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: flex-start;
+//   flex-wrap: wrap;
+//   align-items: stretch;
+//   position: fixed;
+//   top: 10px;
+//   left: 10px;
+//   background: black;
+//   padding: 0px 10px;
+//   // font-family: $roboto;
+//   // line-height: 2em;
+//   a {
+//     color: white;
+//     text-decoration: none;
+//     &:hover {
+//       text-decoration: underline;
+//     }
+//     &:active {
+//       color: red;
+//       font-weight: 700;
+//     }
+//   }
+// }
+
+/* The sidebar menu */
 .sidebar {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  align-items: stretch;
-  position: fixed;
-  top: 10px;
-  left: 10px;
-  background: black;
-  padding: 0px 10px;
-
+  height: 100%; /* 100% Full-height */
+  width: 250px; 
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: -250px; /* 0 left - change this with JavaScript */
+  background-color: $coolors-1;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: all .4s ease; /* 0.4 second transition effect to slide in the sidebar */
+  /* The sidebar links */
   a {
-    color: white;
-    font-size: 1.3em;
-    line-height: 1.7;
+    padding: 8px 8px 8px 32px;
     text-decoration: none;
-
-    &::hover {
-      text-decoration: underline;
+    color: $coolors-4;
+    display: block;
+    transition: all .4s ease;
+    /* When you mouse over the navigation links, change their color */
+    &:hover {
+      color: #f1f1f1;
     }
   }
-
-  display: none;
+  /* Position and style the close button (top right corner) */
+  .closebtn {
+    position: absolute;
+    top: 6px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
 }
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: $coolors-1;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  position: fixed;
+  top: 9px;
+  opacity: 0.2;
+  &:hover {
+    background-color: $coolors-1;
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, where height is less than 500px, change the style of the
+sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 500px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 0.813em;}
+}
+
 
 progress {
   position: fixed;
@@ -740,7 +789,7 @@ progress {
   -webkit-appearance: none;
   appearance: none;
   width: 100%;
-  height: 10px;
+  height: 9px;
   border: none;
   background: transparent;
 
@@ -749,12 +798,12 @@ progress {
   }
 
   &::-webkit-progress-value {
-    background: linear-gradient(to left, #db38b5, #01b3e3, #25ce7b, #fdc741, #ff6b01, #fc4236);
+    background: linear-gradient(to left, $coolors-4, $coolors-3, $coolors-2, $coolors-1);
     background-attachment: fixed;
   }
 
   &::-moz-progress-bar {
-    background: linear-gradient(to left, #db38b5, #01b3e3, #25ce7b, #fdc741, #ff6b01, #fc4236);
+    background: linear-gradient(to left, $coolors-4, $coolors-3, $coolors-2, $coolors-1);
     background-attachment: fixed;
   }
 }

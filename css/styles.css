@@ -86,15 +86,27 @@ ul {
   margin: 0 auto;
 }
 
+.title-day {
+  margin-top: 2em;
+}
+
 /* Styles for the scrolling text boxes */
+.scroll-steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .step {
+  display: block;
   width: 100%;
   max-width: 30em;
   padding: 1.25em;
-  margin-top: 2em;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 24.5em;
+  margin: 2em auto calc(calc(40em * 9 / 16) + 2em) auto;
   background-color: white;
   -webkit-box-shadow: 2px 2px rgba(0, 0, 0, 0.25);
           box-shadow: 2px 2px rgba(0, 0, 0, 0.25);
@@ -110,6 +122,11 @@ ul {
   margin: 2em auto 2em auto;
 }
 
+.svg-end {
+  display: block;
+  height: 0;
+}
+
 .active {
   -webkit-box-shadow: 7px 7px rgba(0, 0, 0, 0.15);
           box-shadow: 7px 7px rgba(0, 0, 0, 0.15);
@@ -117,10 +134,11 @@ ul {
 
 /* Styles for the SVG chart */
 .svg-wrapper {
+  display: block;
   position: relative;
   width: 100%;
   max-width: 40em;
-  height: 22.5em;
+  height: calc(40em * 9 / 16);
   margin: 0 auto 0 auto;
   z-index: -1;
 }
@@ -623,39 +641,79 @@ header {
   background-size: contain;
 }
 
+/* The sidebar menu */
 .sidebar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  height: 100%;
+  /* 100% Full-height */
+  width: 250px;
   position: fixed;
-  top: 10px;
-  left: 10px;
-  background: black;
-  padding: 0px 10px;
-  display: none;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  left: -250px;
+  /* 0 left - change this with JavaScript */
+  background-color: #4E3D42;
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  /* 0.4 second transition effect to slide in the sidebar */
+  /* The sidebar links */
+  /* Position and style the close button (top right corner) */
 }
 
 .sidebar a {
-  color: white;
-  font-size: 1.3em;
-  line-height: 1.7;
+  padding: 8px 8px 8px 32px;
   text-decoration: none;
+  color: #C9D5B5;
+  display: block;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  /* When you mouse over the navigation links, change their color */
 }
 
-.sidebar a::hover {
-  text-decoration: underline;
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 6px;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #4E3D42;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  position: fixed;
+  top: 9px;
+  opacity: 0.2;
+}
+
+.openbtn:hover {
+  background-color: #4E3D42;
+  opacity: 1;
+}
+
+/* On smaller screens, where height is less than 500px, change the style of the
+sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 500px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 0.813em;
+  }
 }
 
 progress {
@@ -666,7 +724,7 @@ progress {
   -moz-appearance: none;
        appearance: none;
   width: 100%;
-  height: 10px;
+  height: 9px;
   border: none;
   background: transparent;
 }
@@ -676,13 +734,13 @@ progress::-webkit-progress-bar {
 }
 
 progress::-webkit-progress-value {
-  background: -webkit-gradient(linear, right top, left top, from(#db38b5), color-stop(#01b3e3), color-stop(#25ce7b), color-stop(#fdc741), color-stop(#ff6b01), to(#fc4236));
-  background: linear-gradient(to left, #db38b5, #01b3e3, #25ce7b, #fdc741, #ff6b01, #fc4236);
+  background: -webkit-gradient(linear, right top, left top, from(#C9D5B5), color-stop(#9F9F92), color-stop(#6D6466), to(#4E3D42));
+  background: linear-gradient(to left, #C9D5B5, #9F9F92, #6D6466, #4E3D42);
   background-attachment: fixed;
 }
 
 progress::-moz-progress-bar {
-  background: linear-gradient(to left, #db38b5, #01b3e3, #25ce7b, #fdc741, #ff6b01, #fc4236);
+  background: linear-gradient(to left, #C9D5B5, #9F9F92, #6D6466, #4E3D42);
   background-attachment: fixed;
 }
 /*# sourceMappingURL=styles.css.map */
