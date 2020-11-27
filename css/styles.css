@@ -94,7 +94,7 @@ ul {
   margin-top: 2em;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: \max(24.5em, 17em);
+  margin-bottom: 24.5em;
   background-color: white;
   -webkit-box-shadow: 2px 2px rgba(0, 0, 0, 0.25);
           box-shadow: 2px 2px rgba(0, 0, 0, 0.25);
@@ -154,6 +154,444 @@ ul {
 
 #svg-1-1 .st8 {
   fill: #ed1c24;
+}
+
+#svg-2-1 .st0 {
+  fill: #45413d;
+}
+
+#svg-2-1 .st1,
+#svg-2-1 .st2 {
+  stroke-miterlimit: 10;
+}
+
+#svg-2-1 .st1 {
+  stroke-width: 13;
+  fill: none;
+  stroke: #45413d;
+}
+
+#svg-2-1 .st2 {
+  fill: #eecb9b;
+  stroke: #eac179;
+}
+
+#svg-2-1 .st4 {
+  fill: #ed1c24;
+}
+
+#svg-2-1 .st5,
+#svg-2-1 .st6,
+#svg-2-1 .st8 {
+  fill: #533814;
+  stroke: #4b3014;
+  stroke-miterlimit: 10;
+}
+
+#svg-2-1 .st6,
+#svg-2-1 .st8 {
+  fill: none;
+  stroke: #eac179;
+}
+
+#svg-2-1 .st8 {
+  stroke: #c42228;
+}
+
+#svg-2-4 .st0 {
+  fill: #eecb9b;
+  stroke: #eac179;
+  stroke-miterlimit: 10;
+}
+
+#svg-2-4 .st1 {
+  fill: #533814;
+}
+
+#svg-2-4 .st2 {
+  fill: #3a342a;
+}
+
+#svg-2-4 .st3 {
+  fill: #ed1c24;
+}
+
+#svg-2-4 .st4 {
+  fill: #d0ecec;
+}
+
+#svg-2-4 .st5,
+#svg-2-4 .st6 {
+  fill: #533814;
+  stroke: #4b3014;
+  stroke-miterlimit: 10;
+}
+
+#svg-2-4 .st6 {
+  fill: #e4273a;
+  stroke: #c42127;
+}
+
+#svg-2-4 .st7 {
+  fill: #d9d943;
+}
+
+#svg-2-5 .st0 {
+  fill: #eecb9b;
+  stroke: #eac179;
+  stroke-miterlimit: 10;
+}
+
+#svg-2-5 .st3 {
+  fill: #ed1c24;
+}
+
+#svg-2-5 .st4 {
+  fill: #533814;
+  stroke: #4b3014;
+}
+
+#svg-2-5 .st4,
+#svg-2-5 .st6,
+#svg-2-5 .st7 {
+  stroke-miterlimit: 10;
+}
+
+#svg-2-5 .st6 {
+  stroke-width: 2;
+  fill: none;
+  stroke: #000;
+}
+
+#svg-2-5 .st7 {
+  fill: #e4273a;
+  stroke: #c42127;
+}
+
+#svg-3-1 .st0 {
+  fill: #eecb9b;
+  stroke: #eac179;
+  stroke-miterlimit: 10;
+}
+
+#svg-3-1 .st2 {
+  fill: #ed1c24;
+}
+
+#svg-3-1 .st4,
+#svg-3-1 .st6 {
+  fill: #533814;
+  stroke: #4b3014;
+  stroke-miterlimit: 10;
+}
+
+#svg-3-1 .st6 {
+  fill: #e4273a;
+  stroke: #c42127;
+}
+
+#svg-3-1 .st7 {
+  stroke: #000;
+}
+
+#svg-3-1 .st13,
+#svg-3-1 .st14,
+#svg-3-1 .st7 {
+  stroke-miterlimit: 10;
+}
+
+#svg-3-1 .st13 {
+  stroke-width: .25;
+  fill: #e4273a;
+  stroke: #c42127;
+}
+
+#svg-3-1 .st14 {
+  fill: #fff;
+  stroke: #000;
+}
+
+#svg-3-2 .st0 {
+  fill: #eecb9b;
+  stroke: #eac179;
+  stroke-miterlimit: 10;
+}
+
+#svg-3-2 .st1 {
+  fill: #1a100a;
+}
+
+#svg-3-2 .st2,
+#svg-3-2 .st3 {
+  fill: #fff;
+  stroke: #1a100a;
+  stroke-miterlimit: 10;
+}
+
+#svg-3-2 .st3 {
+  fill: #e4273a;
+  stroke: #c42127;
+}
+
+#svg-3-2 .st4 {
+  fill: #304c23;
+}
+
+#svg-3-2 .st7,
+#svg-3-2 .st9 {
+  fill: #533814;
+  stroke: #4b3014;
+  stroke-miterlimit: 10;
+}
+
+#svg-3-2 .st9 {
+  fill: none;
+  stroke: #000;
+}
+
+#svg-3-5 .st0 {
+  fill: #eecb9b;
+  stroke: #eac179;
+  stroke-miterlimit: 10;
+}
+
+#svg-3-5 .st3 {
+  fill: #ed1c24;
+}
+
+#svg-3-5 .st4 {
+  stroke: #4b3014;
+  stroke-miterlimit: 10;
+}
+
+#svg-3-5 .st4,
+#svg-3-5 .st5 {
+  fill: #533814;
+}
+
+#svg-3-5 .st7 {
+  fill: none;
+  stroke: #000;
+  stroke-miterlimit: 10;
+}
+
+#svg-3-7 .st0 {
+  fill: #eecb9b;
+  stroke: #eac179;
+  stroke-miterlimit: 10;
+}
+
+#svg-3-7 .st1 {
+  fill: #d0ecec;
+}
+
+#svg-3-7 .st2 {
+  fill: #ed1c24;
+}
+
+#svg-3-7 .st3 {
+  fill: #533814;
+  stroke: #4b3014;
+  stroke-miterlimit: 10;
+}
+
+#svg-3-7 .st6 {
+  fill: #3a2411;
+}
+
+#svg-3-7 .st7 {
+  fill: #756c60;
+}
+
+#svg-3-7 .st9 {
+  fill: none;
+  stroke: #000;
+  stroke-miterlimit: 10;
+}
+
+#svg-4-1 .st0,
+#svg-4-1 .st1 {
+  fill: #eecb9b;
+  stroke: #eac179;
+  stroke-miterlimit: 10;
+}
+
+#svg-4-1 .st1 {
+  fill: #e4273a;
+  stroke: #c42127;
+}
+
+#svg-4-1 .st4 {
+  fill: #125d2f;
+}
+
+#svg-4-1 .st6 {
+  fill: #533814;
+  stroke: #4b3014;
+  stroke-miterlimit: 10;
+}
+
+#svg-4-1 .st10 {
+  fill: #ed1c24;
+}
+
+#svg-4-2 .st0 {
+  fill: #eecb9b;
+  stroke: #eac179;
+  stroke-miterlimit: 10;
+}
+
+#svg-4-2 .st4 {
+  fill: #ed1c24;
+}
+
+#svg-4-2 .st5,
+#svg-4-2 .st7 {
+  fill: #533814;
+  stroke: #4b3014;
+  stroke-miterlimit: 10;
+}
+
+#svg-4-2 .st7 {
+  fill: none;
+  stroke: #000;
+}
+
+#svg-4-3 .st2 {
+  fill: #d5b26d;
+}
+
+#svg-4-3 .st4,
+#svg-4-3 .st6,
+#svg-4-3 .st7 {
+  fill: #eecb9b;
+  stroke: #eac179;
+  stroke-miterlimit: 10;
+}
+
+#svg-4-3 .st6,
+#svg-4-3 .st7 {
+  fill: #e1f2ef;
+  stroke: #000;
+}
+
+#svg-4-3 .st7 {
+  fill: #533814;
+  stroke: #4b3014;
+}
+
+#svg-4-5 .st0 {
+  fill: #eecb9b;
+  stroke: #eac179;
+  stroke-miterlimit: 10;
+}
+
+#svg-4-5 .st4 {
+  fill: #ed1c24;
+}
+
+#svg-4-5 .st5 {
+  fill: #533814;
+  stroke: #4b3014;
+  stroke-miterlimit: 10;
+}
+
+#svg-5-1 .st1 {
+  fill: #fcf7d3;
+}
+
+#svg-5-1 .st2 {
+  fill: #483b15;
+}
+
+#svg-5-1 .st3,
+#svg-5-1 .st4 {
+  fill: none;
+  stroke: #37160d;
+  stroke-miterlimit: 10;
+}
+
+#svg-5-1 .st4 {
+  fill: #eecb9b;
+  stroke: #eac179;
+}
+
+#svg-5-1 .st5 {
+  fill: #1a100a;
+}
+
+#svg-5-1 .st6 {
+  fill: #fff;
+  stroke: #1a100a;
+  stroke-miterlimit: 10;
+}
+
+#svg-5-1 .st7 {
+  fill: #304c23;
+}
+
+#svg-5-1 .st10,
+#svg-5-1 .st9 {
+  fill: #e4273a;
+  stroke: #c42127;
+  stroke-miterlimit: 10;
+}
+
+#svg-5-1 .st10 {
+  fill: #533814;
+  stroke: #4b3014;
+}
+
+#svg-5-1 .st12 {
+  fill: #ed1c24;
+}
+
+#svg-5-1 .st16 {
+  fill: #304c85;
+}
+
+#svg-6-1 .st0 {
+  fill: #eecb9b;
+  stroke: #eac179;
+  stroke-miterlimit: 10;
+}
+
+#svg-6-1 .st2 {
+  fill: #ed1c24;
+}
+
+#svg-6-1 .st3,
+#svg-6-1 .st6 {
+  fill: #533814;
+  stroke: #4b3014;
+  stroke-miterlimit: 10;
+}
+
+#svg-6-1 .st6 {
+  fill: none;
+  stroke: #69c5b2;
+}
+
+#svg-8-1 .st0 {
+  fill: #eecb9b;
+  stroke: #eac179;
+  stroke-miterlimit: 10;
+}
+
+#svg-8-1 .st2 {
+  fill: #ed1c24;
+}
+
+#svg-8-1 .st4,
+#svg-8-1 .st6 {
+  fill: #533814;
+  stroke: #4b3014;
+  stroke-miterlimit: 10;
+}
+
+#svg-8-1 .st6 {
+  fill: #e4273a;
+  stroke: #c42127;
 }
 
 /* HEADER */

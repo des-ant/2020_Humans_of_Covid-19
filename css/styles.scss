@@ -110,7 +110,7 @@ ul {
 .title {
   // background-color: $coolors-5;
   width: 100%;
-
+  // border: 1px solid black;
   .title-content {
     max-width: 30em;
     padding: \min(15vh, 5em) 1.25em;
@@ -119,6 +119,7 @@ ul {
 }
 
 #title-0 {
+
   // background-color: $coolors-5;
   // background-image:
   // linear-gradient(90deg, transparent 79px, $coolors-4 79px, $coolors-4 81px, transparent 81px),
@@ -143,10 +144,12 @@ ul {
   margin-top: $step-margin-unit;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: \max($svg-height + $step-margin-unit, $step-margin-unit + 15em);
+  margin-bottom: $svg-height + $step-margin-unit;
+  // margin-bottom: \max($svg-height + $step-margin-unit, $step-margin-unit + 15em);
   background-color: white;
-  box-shadow: 2px 2px rgba(0,0,0,.25);
+  box-shadow: 2px 2px rgba(0, 0, 0, .25);
   transition: all .4s ease;
+
   p {
     margin-bottom: 0;
   }
@@ -157,7 +160,7 @@ ul {
 }
 
 .active {
-  box-shadow: 7px 7px rgba(0,0,0,.15);
+  box-shadow: 7px 7px rgba(0, 0, 0, .15);
 }
 
 /* Styles for the SVG chart */
@@ -203,6 +206,473 @@ ul {
 
   .st8 {
     fill: #ed1c24
+  }
+}
+
+#svg-2-1 {
+  .st0 {
+    fill: #45413d
+  }
+
+  .st1,
+  .st2 {
+    stroke-miterlimit: 10
+  }
+
+  .st1 {
+    stroke-width: 13;
+    fill: none;
+    stroke: #45413d
+  }
+
+  .st2 {
+    fill: #eecb9b;
+    stroke: #eac179
+  }
+
+  .st4 {
+    fill: #ed1c24
+  }
+
+  .st5,
+  .st6,
+  .st8 {
+    fill: #533814;
+    stroke: #4b3014;
+    stroke-miterlimit: 10
+  }
+
+  .st6,
+  .st8 {
+    fill: none;
+    stroke: #eac179
+  }
+
+  .st8 {
+    stroke: #c42228
+  }
+}
+
+#svg-2-4 {
+  .st0 {
+    fill: #eecb9b;
+    stroke: #eac179;
+    stroke-miterlimit: 10
+  }
+
+  .st1 {
+    fill: #533814
+  }
+
+  .st2 {
+    fill: #3a342a
+  }
+
+  .st3 {
+    fill: #ed1c24
+  }
+
+  .st4 {
+    fill: #d0ecec
+  }
+
+  .st5,
+  .st6 {
+    fill: #533814;
+    stroke: #4b3014;
+    stroke-miterlimit: 10
+  }
+
+  .st6 {
+    fill: #e4273a;
+    stroke: #c42127
+  }
+
+  .st7 {
+    fill: #d9d943
+  }
+}
+
+#svg-2-5 {
+  .st0 {
+    fill: #eecb9b;
+    stroke: #eac179;
+    stroke-miterlimit: 10
+  }
+
+  .st3 {
+    fill: #ed1c24
+  }
+
+  .st4 {
+    fill: #533814;
+    stroke: #4b3014
+  }
+
+  .st4,
+  .st6,
+  .st7 {
+    stroke-miterlimit: 10
+  }
+
+  .st6 {
+    stroke-width: 2;
+    fill: none;
+    stroke: #000
+  }
+
+  .st7 {
+    fill: #e4273a;
+    stroke: #c42127
+  }
+}
+
+#svg-3-1 {
+  .st0 {
+    fill: #eecb9b;
+    stroke: #eac179;
+    stroke-miterlimit: 10
+  }
+
+  .st2 {
+    fill: #ed1c24
+  }
+
+  .st4,
+  .st6 {
+    fill: #533814;
+    stroke: #4b3014;
+    stroke-miterlimit: 10
+  }
+
+  .st6 {
+    fill: #e4273a;
+    stroke: #c42127
+  }
+
+  .st7 {
+    stroke: #000
+  }
+
+  .st13,
+  .st14,
+  .st7 {
+    stroke-miterlimit: 10
+  }
+
+  .st13 {
+    stroke-width: .25;
+    fill: #e4273a;
+    stroke: #c42127
+  }
+
+  .st14 {
+    fill: #fff;
+    stroke: #000
+  }
+}
+
+#svg-3-2 {
+  .st0 {
+    fill: #eecb9b;
+    stroke: #eac179;
+    stroke-miterlimit: 10
+  }
+
+  .st1 {
+    fill: #1a100a
+  }
+
+  .st2,
+  .st3 {
+    fill: #fff;
+    stroke: #1a100a;
+    stroke-miterlimit: 10
+  }
+
+  .st3 {
+    fill: #e4273a;
+    stroke: #c42127
+  }
+
+  .st4 {
+    fill: #304c23
+  }
+
+  .st7,
+  .st9 {
+    fill: #533814;
+    stroke: #4b3014;
+    stroke-miterlimit: 10
+  }
+
+  .st9 {
+    fill: none;
+    stroke: #000
+  }
+}
+
+#svg-3-5 {
+  .st0 {
+    fill: #eecb9b;
+    stroke: #eac179;
+    stroke-miterlimit: 10
+  }
+
+  .st3 {
+    fill: #ed1c24
+  }
+
+  .st4 {
+    stroke: #4b3014;
+    stroke-miterlimit: 10
+  }
+
+  .st4,
+  .st5 {
+    fill: #533814
+  }
+
+  .st7 {
+    fill: none;
+    stroke: #000;
+    stroke-miterlimit: 10
+  }
+}
+
+#svg-3-7 {
+  .st0 {
+    fill: #eecb9b;
+    stroke: #eac179;
+    stroke-miterlimit: 10
+  }
+
+  .st1 {
+    fill: #d0ecec
+  }
+
+  .st2 {
+    fill: #ed1c24
+  }
+
+  .st3 {
+    fill: #533814;
+    stroke: #4b3014;
+    stroke-miterlimit: 10
+  }
+
+  .st6 {
+    fill: #3a2411
+  }
+
+  .st7 {
+    fill: #756c60
+  }
+
+  .st9 {
+    fill: none;
+    stroke: #000;
+    stroke-miterlimit: 10
+  }
+}
+
+#svg-4-1 {
+
+  .st0,
+  .st1 {
+    fill: #eecb9b;
+    stroke: #eac179;
+    stroke-miterlimit: 10
+  }
+
+  .st1 {
+    fill: #e4273a;
+    stroke: #c42127
+  }
+
+  .st4 {
+    fill: #125d2f
+  }
+
+  .st6 {
+    fill: #533814;
+    stroke: #4b3014;
+    stroke-miterlimit: 10
+  }
+
+  .st10 {
+    fill: #ed1c24
+  }
+}
+
+#svg-4-2 {
+  .st0 {
+    fill: #eecb9b;
+    stroke: #eac179;
+    stroke-miterlimit: 10
+  }
+
+  .st4 {
+    fill: #ed1c24
+  }
+
+  .st5,
+  .st7 {
+    fill: #533814;
+    stroke: #4b3014;
+    stroke-miterlimit: 10
+  }
+
+  .st7 {
+    fill: none;
+    stroke: #000
+  }
+}
+
+#svg-4-3 {
+  .st2 {
+    fill: #d5b26d
+  }
+
+  .st4,
+  .st6,
+  .st7 {
+    fill: #eecb9b;
+    stroke: #eac179;
+    stroke-miterlimit: 10
+  }
+
+  .st6,
+  .st7 {
+    fill: #e1f2ef;
+    stroke: #000
+  }
+
+  .st7 {
+    fill: #533814;
+    stroke: #4b3014
+  }
+}
+
+#svg-4-5 {
+  .st0 {
+    fill: #eecb9b;
+    stroke: #eac179;
+    stroke-miterlimit: 10
+  }
+
+  .st4 {
+    fill: #ed1c24
+  }
+
+  .st5 {
+    fill: #533814;
+    stroke: #4b3014;
+    stroke-miterlimit: 10
+  }
+}
+
+#svg-5-1 {
+  .st1 {
+    fill: #fcf7d3
+  }
+
+  .st2 {
+    fill: #483b15
+  }
+
+  .st3,
+  .st4 {
+    fill: none;
+    stroke: #37160d;
+    stroke-miterlimit: 10
+  }
+
+  .st4 {
+    fill: #eecb9b;
+    stroke: #eac179
+  }
+
+  .st5 {
+    fill: #1a100a
+  }
+
+  .st6 {
+    fill: #fff;
+    stroke: #1a100a;
+    stroke-miterlimit: 10
+  }
+
+  .st7 {
+    fill: #304c23
+  }
+
+  .st10,
+  .st9 {
+    fill: #e4273a;
+    stroke: #c42127;
+    stroke-miterlimit: 10
+  }
+
+  .st10 {
+    fill: #533814;
+    stroke: #4b3014
+  }
+
+  .st12 {
+    fill: #ed1c24
+  }
+
+  .st16 {
+    fill: #304c85
+  }
+}
+
+#svg-6-1 {
+  .st0 {
+    fill: #eecb9b;
+    stroke: #eac179;
+    stroke-miterlimit: 10
+  }
+
+  .st2 {
+    fill: #ed1c24
+  }
+
+  .st3,
+  .st6 {
+    fill: #533814;
+    stroke: #4b3014;
+    stroke-miterlimit: 10
+  }
+
+  .st6 {
+    fill: none;
+    stroke: #69c5b2
+  }
+}
+
+#svg-8-1 {
+  .st0 {
+    fill: #eecb9b;
+    stroke: #eac179;
+    stroke-miterlimit: 10
+  }
+
+  .st2 {
+    fill: #ed1c24
+  }
+
+  .st4,
+  .st6 {
+    fill: #533814;
+    stroke: #4b3014;
+    stroke-miterlimit: 10
+  }
+
+  .st6 {
+    fill: #e4273a;
+    stroke: #c42127
   }
 }
 

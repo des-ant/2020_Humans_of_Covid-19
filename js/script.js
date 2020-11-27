@@ -31,7 +31,6 @@ gsap.utils.toArray('.step').forEach(step => {
   });
 });
 
-// First svg animation
 // This pins the SVG animation wrapper when it hits the center of the viewport
 // and releases the pin when the final textbox meets the bottom of the svg
 // We use a function to define the end point to line up the top of the
@@ -54,6 +53,7 @@ ScrollTrigger.create({
   id: 'svg-pin-1-1'
 });
 
+// Svg animation
 var t1 = gsap.timeline({
   repeat: -1,
   scrollTrigger: {
@@ -68,3 +68,34 @@ var t1 = gsap.timeline({
 });
 // t1.to("#svg-1-1 #arms", {duration: 1, rotation: 90, x: 100}, 0)
 // t1.to("#svg-1-1 #skirt", {duration: 1, scale: 2, ease:"back"}, 0.5)
+
+ScrollTrigger.create({
+  trigger: '#svg-2-1',
+  toggleActions: "play pause resume reset",
+  endTrigger: '#step-2-4',
+  start: 'center center',
+  end: () => {
+    const height = window.innerHeight;
+    const svgHeight = document.querySelector('#svg-2-1')
+      .offsetHeight;
+    return `top ${svgHeight + (height - svgHeight) / 2}px`;
+  },
+  pin: true,
+  pinSpacing: false,
+  markers: true,
+  // scrub: true,
+  id: 'svg-pin-2-1'
+});
+
+// var t2 = gsap.timeline({
+//   repeat: -1,
+//   scrollTrigger: {
+//     trigger: '#svg-2-1',
+//     toggleActions: "play pause resume reset",
+//     endTrigger: '#svg-2-4',
+//     start: 'top 80%',
+//     end: 'top 20%',
+//     // markers: true,
+//     id: 'svg-2-1'
+//   }
+// });
