@@ -698,13 +698,83 @@ var t8 = gsap.timeline({
   scrollTrigger: {
     trigger: '#svg-3-7',
     toggleActions: "play pause resume reset",
-    endTrigger: '#svg-end-3-7',
+    endTrigger: '#svg-3-7',
     start: 'top 80%',
-    end: 'top 20%',
+    end: 'bottom 20%',
     // markers: true,
     id: 'svg-3-7'
   }
 });
+
+// Wave
+t8.set("#svg-3-7 #wave-l", {opacity: 0, scale: 0.2, y: 10});
+t8.set("#svg-3-7 #wave-r", {opacity: 0, scale: 0.2, y: 20});
+t8.to("#svg-3-7 #lip", {duration: 1, ease: "power4.out", scaleY: 0.3, 
+transformOrigin: "50% 50%"}, 0);
+t8.to("#svg-3-7 #lip", {duration: 1, ease: "power4.out", scaleY: 1, 
+transformOrigin: "50% 50%"}, 1);
+t8.to("#svg-3-7 #arm-r", {duration: 1, ease: "power4.out", rotation: 10, 
+transformOrigin: "10% 90%"}, 0);
+t8.to("#svg-3-7 #arm-r", {duration: 1, ease: "power4.out", rotation: 0, 
+transformOrigin: "10% 90%"}, 1);
+t8.to("#svg-3-7 #wave-l", {duration: 1, ease: "power4.out", opacity: 1}, 0);
+t8.to("#svg-3-7 #wave-l", {duration: 1, ease: "power4.out", opacity: 0}, 1);
+t8.to("#svg-3-7 #wave-l", {duration: 2, ease: "power4.out", scale: 1.5, 
+transformOrigin: "50% 50%", x: 30}, 0);
+t8.to("#svg-3-7 #wave-r", {duration: 1, ease: "power4.out", opacity: 1}, 0);
+t8.to("#svg-3-7 #wave-r", {duration: 1, ease: "power4.out", opacity: 0}, 1);
+t8.to("#svg-3-7 #wave-r", {duration: 2, ease: "power4.out", scale: 1.5, 
+transformOrigin: "50% 50%", x: 30}, 0);
+// Animate eye brows
+// State 1
+t8.to("#svg-3-7 #brow-r", {duration: 1, ease: "power4.out", rotation: 10, 
+transformOrigin: "50% 50%"}, 0);
+t8.to("#svg-3-7 #brow-l", {duration: 1, ease: "power4.out", rotation: -10, 
+transformOrigin: "50% 50%"}, 0);
+// State 2
+t8.to("#svg-3-7 #brow-r", {duration: 0.5, ease: "back", rotation: 0, 
+transformOrigin: "50% 50%"}, 3);
+t8.to("#svg-3-7 #brow-l", {duration: 0.5, ease: "back", rotation: 0, 
+transformOrigin: "50% 50%"}, 3);
+// Animate eyes
+// State 1
+t8.to("#svg-3-7 #eye-r", {duration: 1, ease: "power4.out", rotation: 10, 
+transformOrigin: "50% 50%"}, 0);
+t8.to("#svg-3-7 #eye-l", {duration: 1, ease: "power4.out", rotation: -10, 
+transformOrigin: "50% 50%"}, 0);
+// Blink 1
+t8.to("#svg-3-7 #pupil-r", {duration: 0.1, ease: "power4.out", scaleY: 0, 
+transformOrigin: "50% 100%"}, 1);
+t8.to("#svg-3-7 #lid-r", {duration: 0.1, ease: "power4.out", y: 4}, 1);
+t8.to("#svg-3-7 #pupil-r", {duration: 0.1, ease: "power4.out", scaleY: 1, 
+transformOrigin: "50% 100%"}, 1.1);
+t8.to("#svg-3-7 #lid-r", {duration: 0.1, ease: "power4.out", y: 0}, 1.1);
+// L eye
+t8.to("#svg-3-7 #pupil-l", {duration: 0.1, ease: "power4.out", scaleY: 0, 
+transformOrigin: "50% 100%"}, 1);
+t8.to("#svg-3-7 #lid-l", {duration: 0.1, ease: "power4.out", y: 4}, 1);
+t8.to("#svg-3-7 #pupil-l", {duration: 0.1, ease: "power4.out", scaleY: 1, 
+transformOrigin: "50% 100%"}, 1.1);
+t8.to("#svg-3-7 #lid-l", {duration: 0.1, ease: "power4.out", y: 0}, 1.1);
+// Blink 2
+t8.to("#svg-3-7 #pupil-r", {duration: 0.1, ease: "power4.out", scaleY: 0, 
+transformOrigin: "50% 100%"}, 1.75);
+t8.to("#svg-3-7 #lid-r", {duration: 0.1, ease: "power4.out", y: 4}, 1.75);
+t8.to("#svg-3-7 #pupil-r", {duration: 0.1, ease: "power4.out", scaleY: 1, 
+transformOrigin: "50% 100%"}, 1.85);
+t8.to("#svg-3-7 #lid-r", {duration: 0.1, ease: "power4.out", y: 0}, 1.85);
+// L eye
+t8.to("#svg-3-7 #pupil-l", {duration: 0.1, ease: "power4.out", scaleY: 0, 
+transformOrigin: "50% 100%"}, 1.75);
+t8.to("#svg-3-7 #lid-l", {duration: 0.1, ease: "power4.out", y: 4}, 1.75);
+t8.to("#svg-3-7 #pupil-l", {duration: 0.1, ease: "power4.out", scaleY: 1, 
+transformOrigin: "50% 100%"}, 1.85);
+t8.to("#svg-3-7 #lid-l", {duration: 0.1, ease: "power4.out", y: 0}, 1.85);
+// State 2
+t8.to("#svg-3-7 #eye-r", {duration: 0.5, ease: "back", rotation: 0, 
+transformOrigin: "50% 50%"}, 3);
+t8.to("#svg-3-7 #eye-l", {duration: 0.5, ease: "back", rotation: 0, 
+transformOrigin: "50% 50%"}, 3);
 
 ScrollTrigger.create({
   trigger: '#svg-4-3',
