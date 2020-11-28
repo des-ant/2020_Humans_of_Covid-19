@@ -459,6 +459,102 @@ var t5 = gsap.timeline({
   }
 });
 
+// Cough
+var t5c = gsap.timeline({
+  repeat: 1,
+  repeatDelay: 0.5
+});
+t5.add(t5c, 0);
+t5c.set("#svg-3-1 #lip", {scaleY: 0.2, y: 5});
+t5c.set("#svg-3-1 #brow-l", {rotate: -10, transformOrigin: "50% 50%"});
+t5c.set("#svg-3-1 #brow-r", {rotate: 10, transformOrigin: "50% 50%"});
+t5c.to("#svg-3-1 #head", {duration: 0.1, ease: "bounce", x: 5, y: 10}, 0);
+t5c.to("#svg-3-1 #lip", {duration: 0.1, ease: "power4.out", scaleY: 1, 
+transformOrigin: "50% 100%"}, 0);
+t5c.to("#svg-3-1 #hair-l", {duration: 0.2, ease: "back", rotate: 10, 
+transformOrigin: "100% 40%"}, 0);
+t5c.to("#svg-3-1 #hair-r", {duration: 0.2, ease: "back", rotate: -10, 
+transformOrigin: "0% 0%"}, 0);
+t5c.to("#svg-3-1 #brow-l", {duration: 0.2, ease: "power4.out", rotate: 0, 
+transformOrigin: "50% 50%"}, 0);
+t5c.to("#svg-3-1 #brow-r", {duration: 0.2, ease: "power4.out", rotate: 0, 
+transformOrigin: "50% 50%"}, 0);
+t5c.to("#svg-3-1 #head", {duration: 0.1, ease: "bounce", x: 0, y: 0}, 0.1);
+t5c.to("#svg-3-1 #lip", {duration: 0.1, ease: "power4.out", scaleY: 0.2, 
+transformOrigin: "50% 100%"}, 0.1);
+t5c.to("#svg-3-1 #hair-l", {duration: 0.2, ease: "back", rotate: 0, 
+transformOrigin: "100% 40%"}, 0.2);
+t5c.to("#svg-3-1 #hair-r", {duration: 0.2, ease: "back", rotate: 0, 
+transformOrigin: "0% 0%"}, 0.2);
+t5c.to("#svg-3-1 #brow-l", {duration: 0.2, ease: "power4.out", rotate: -10, 
+transformOrigin: "50% 50%"}, 0.2);
+t5c.to("#svg-3-1 #brow-r", {duration: 0.2, ease: "power4.out", rotate: 10, 
+transformOrigin: "50% 50%"}, 0.2);
+
+// Animate eyes
+var t5g = gsap.timeline({
+});
+t5.add(t5g, 0);
+// Girl
+// Blink 1
+t5g.to("#svg-3-1 #eye-r-2", {duration: 0.1, ease: "power4.out", scaleY: 0, 
+transformOrigin: "50% 100%"}, 1);
+t5g.to("#svg-3-1 #eye-r-2", {duration: 0.1, ease: "power4.out", scaleY: 1, 
+transformOrigin: "50% 100%"}, 1.1);
+// L eye
+t5g.to("#svg-3-1 #eye-l-2", {duration: 0.1, ease: "power4.out", scaleY: 0, 
+transformOrigin: "50% 100%"}, 1);
+t5g.to("#svg-3-1 #eye-l-2", {duration: 0.1, ease: "power4.out", scaleY: 1, 
+transformOrigin: "50% 100%"}, 1.1);
+// Blink 2
+t5g.to("#svg-3-1 #eye-r-2", {duration: 0.1, ease: "power4.out", scaleY: 0, 
+transformOrigin: "50% 100%"}, 1.75);
+t5g.to("#svg-3-1 #eye-r-2", {duration: 0.1, ease: "power4.out", scaleY: 1, 
+transformOrigin: "50% 100%"}, 1.85);
+// L eye
+t5g.to("#svg-3-1 #eye-l-2", {duration: 0.1, ease: "power4.out", scaleY: 0, 
+transformOrigin: "50% 100%"}, 1.75);
+t5g.to("#svg-3-1 #eye-l-2", {duration: 0.1, ease: "power4.out", scaleY: 1, 
+transformOrigin: "50% 100%"}, 1.85);
+// Boy
+var t5b = gsap.timeline({
+});
+t5.add(t5b, 1);
+// Animate eyes
+// Blink 1
+t5b.to("#svg-3-1 #eye-r-3", {duration: 0.1, ease: "power4.out", scaleY: 0, 
+transformOrigin: "50% 100%"}, 1);
+t5b.to("#svg-3-1 #eye-r-3", {duration: 0.1, ease: "power4.out", scaleY: 1, 
+transformOrigin: "50% 100%"}, 1.1);
+// L eye
+t5b.to("#svg-3-1 #eye-l-3", {duration: 0.1, ease: "power4.out", scaleY: 0, 
+transformOrigin: "50% 100%"}, 1);
+t5b.to("#svg-3-1 #eye-l-3", {duration: 0.1, ease: "power4.out", scaleY: 1, 
+transformOrigin: "50% 100%"}, 1.1);
+// Blink 2
+t5b.to("#svg-3-1 #eye-r-3", {duration: 0.1, ease: "power4.out", scaleY: 0, 
+transformOrigin: "50% 100%"}, 1.75);
+t5b.to("#svg-3-1 #eye-r-3", {duration: 0.1, ease: "power4.out", scaleY: 1, 
+transformOrigin: "50% 100%"}, 1.85);
+// L eye
+t5b.to("#svg-3-1 #eye-l-3", {duration: 0.1, ease: "power4.out", scaleY: 0, 
+transformOrigin: "50% 100%"}, 1.75);
+t5b.to("#svg-3-1 #eye-l-3", {duration: 0.1, ease: "power4.out", scaleY: 1, 
+transformOrigin: "50% 100%"}, 1.85);
+// Jump
+var t5gj = gsap.timeline({
+  repeat: 1,
+  repeatDelay: 1
+});
+t5g.add(t5gj, 0);
+t5gj.to("#svg-3-1 #girl", {duration: 0.1, ease: "bounce", y: -20}, 0);
+t5gj.to("#svg-3-1 #arm-r-3", {duration: 0.1, ease: "bounce", rotate: -20, 
+transformOrigin: "0% 10%"}, 0);
+t5gj.to("#svg-3-1 #girl", {duration: 0.1, ease: "bounce", y: 0}, 0.1);
+t5gj.to("#svg-3-1 #arm-r-3", {duration: 0.1, ease: "bounce", rotate: 0, 
+transformOrigin: "0% 10%"}, 0.1);
+
+
 ScrollTrigger.create({
   trigger: '#svg-3-2',
   toggleActions: "play pause resume reset",
