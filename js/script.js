@@ -77,8 +77,62 @@ var t1 = gsap.timeline({
     id: 'svg-1-1'
   }
 });
-// t1.to("#svg-1-1 #arms", {duration: 1, rotation: 90, x: 100}, 0)
-// t1.to("#svg-1-1 #skirt", {duration: 1, scale: 2, ease:"back"}, 0.5)
+// L arm
+t1.to("#svg-1-1 #arm-l", {duration: 1, ease: "back", rotation: -5, 
+transformOrigin: "10% 90%"}, 0);
+t1.to("#svg-1-1 #arm-l", {duration: 1, ease: "back", rotation: 0, 
+transformOrigin: "10% 90%"}, 2);
+// Animate eye brows
+// State 1
+t1.to("#svg-1-1 #brow-r", {duration: 1, ease: "power4.out", rotation: 10, 
+transformOrigin: "50% 50%"}, 0);
+t1.to("#svg-1-1 #brow-l", {duration: 1, ease: "power4.out", rotation: -10, 
+transformOrigin: "50% 50%"}, 0);
+// State 2
+t1.to("#svg-1-1 #brow-r", {duration: 0.5, ease: "back", rotation: 0, 
+transformOrigin: "50% 50%"}, 3);
+t1.to("#svg-1-1 #brow-l", {duration: 0.5, ease: "back", rotation: 0, 
+transformOrigin: "50% 50%"}, 3);
+// Animate eyes
+// State 1
+t1.to("#svg-1-1 #eye-r", {duration: 1, ease: "power4.out", rotation: 10, 
+transformOrigin: "50% 50%"}, 0);
+t1.to("#svg-1-1 #eye-l", {duration: 1, ease: "power4.out", rotation: -10, 
+transformOrigin: "50% 50%"}, 0);
+// Blink 1
+t1.to("#svg-1-1 #pupil-r", {duration: 0.1, ease: "power4.out", scaleY: 0, 
+transformOrigin: "50% 100%"}, 1);
+t1.to("#svg-1-1 #lid-r", {duration: 0.1, ease: "power4.out", y: 4}, 1);
+t1.to("#svg-1-1 #pupil-r", {duration: 0.1, ease: "power4.out", scaleY: 1, 
+transformOrigin: "50% 100%"}, 1.1);
+t1.to("#svg-1-1 #lid-r", {duration: 0.1, ease: "power4.out", y: 0}, 1.1);
+// L eye
+t1.to("#svg-1-1 #pupil-l", {duration: 0.1, ease: "power4.out", scaleY: 0, 
+transformOrigin: "50% 100%"}, 1);
+t1.to("#svg-1-1 #lid-l", {duration: 0.1, ease: "power4.out", y: 4}, 1);
+t1.to("#svg-1-1 #pupil-l", {duration: 0.1, ease: "power4.out", scaleY: 1, 
+transformOrigin: "50% 100%"}, 1.1);
+t1.to("#svg-1-1 #lid-l", {duration: 0.1, ease: "power4.out", y: 0}, 1.1);
+// Blink 2
+t1.to("#svg-1-1 #pupil-r", {duration: 0.1, ease: "power4.out", scaleY: 0, 
+transformOrigin: "50% 100%"}, 1.75);
+t1.to("#svg-1-1 #lid-r", {duration: 0.1, ease: "power4.out", y: 4}, 1.75);
+t1.to("#svg-1-1 #pupil-r", {duration: 0.1, ease: "power4.out", scaleY: 1, 
+transformOrigin: "50% 100%"}, 1.85);
+t1.to("#svg-1-1 #lid-r", {duration: 0.1, ease: "power4.out", y: 0}, 1.85);
+// L eye
+t1.to("#svg-1-1 #pupil-l", {duration: 0.1, ease: "power4.out", scaleY: 0, 
+transformOrigin: "50% 100%"}, 1.75);
+t1.to("#svg-1-1 #lid-l", {duration: 0.1, ease: "power4.out", y: 4}, 1.75);
+t1.to("#svg-1-1 #pupil-l", {duration: 0.1, ease: "power4.out", scaleY: 1, 
+transformOrigin: "50% 100%"}, 1.85);
+t1.to("#svg-1-1 #lid-l", {duration: 0.1, ease: "power4.out", y: 0}, 1.85);
+// State 2
+t1.to("#svg-1-1 #eye-r", {duration: 0.5, ease: "back", rotation: 0, 
+transformOrigin: "50% 50%"}, 3);
+t1.to("#svg-1-1 #eye-l", {duration: 0.5, ease: "back", rotation: 0, 
+transformOrigin: "50% 50%"}, 3);
+
 
 ScrollTrigger.create({
   trigger: '#svg-2-1',
