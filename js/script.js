@@ -827,6 +827,69 @@ var t10 = gsap.timeline({
   }
 });
 
+// Cough
+t10.set("#svg-4-2 #lip", {scaleY: 0.2, y: 3});
+t10.set("#svg-4-2 #droplets", {opacity: 0, scale: 0.2});
+t10.set("#svg-4-2 #spark-l", {opacity: 0, scale: 0.2});
+t10.set("#svg-4-2 #spark-r", {opacity: 0, scale: 0.2});
+t10.set("#svg-4-2 #brow-l", {rotate: -10, transformOrigin: "50% 50%"});
+t10.set("#svg-4-2 #brow-r", {rotate: 10, transformOrigin: "50% 50%"});
+t10.set("#svg-4-2 #wave-l", {opacity: 0});
+t10.set("#svg-4-2 #wave-r", {opacity: 0});
+t10.to("#svg-4-2 #head", {duration: 0.1, ease: "bounce", x: 5, y: 10}, 0);
+t10.to("#svg-4-2 #lip", {duration: 0.1, ease: "power4.out", scaleY: 1, 
+transformOrigin: "50% 50%"}, 0);
+t10.to("#svg-4-2 #hair-l", {duration: 0.2, ease: "back", rotate: 10, 
+transformOrigin: "80% 10%"}, 0);
+t10.to("#svg-4-2 #hair-r", {duration: 0.2, ease: "back", rotate: -10, 
+transformOrigin: "0% 20%"}, 0);
+t10.to("#svg-4-2 #brow-l", {duration: 0.2, ease: "power4.out", rotate: 0, 
+transformOrigin: "50% 50%"}, 0);
+t10.to("#svg-4-2 #brow-r", {duration: 0.2, ease: "power4.out", rotate: 0, 
+transformOrigin: "50% 50%"}, 0);
+t10.to("#svg-4-2 #head", {duration: 0.1, ease: "bounce", x: 0, y: 0}, 0.1);
+t10.to("#svg-4-2 #lip", {duration: 0.1, ease: "power4.out", scaleY: 0.2, 
+transformOrigin: "50% 100%"}, 0.1);
+t10.to("#svg-4-2 #hair-l", {duration: 0.2, ease: "back", rotate: 0, 
+transformOrigin: "80% 10%"}, 0.2);
+t10.to("#svg-4-2 #hair-r", {duration: 0.2, ease: "back", rotate: 0, 
+transformOrigin: "0% 20%"}, 0.2);
+t10.to("#svg-4-2 #brow-l", {duration: 0.2, ease: "power4.out", rotate: -10, 
+transformOrigin: "50% 50%"}, 0.2);
+t10.to("#svg-4-2 #brow-r", {duration: 0.2, ease: "power4.out", rotate: 10, 
+transformOrigin: "50% 50%"}, 0.2);
+t10.to("#svg-4-2 #arm-l", {duration: 0.3, ease: "power4.out", rotate: -3, 
+transformOrigin: "10% 90%"}, 0);
+t10.to("#svg-4-2 #arm-l", {duration: 0.4, ease: "back", rotate: 0, 
+transformOrigin: "10% 90%"}, 0.3);
+t10.to("#svg-4-2 #eye-l", {duration: 0.2, ease: "power4.out", rotate: 0, 
+transformOrigin: "50% 50%"}, 0);
+t10.to("#svg-4-2 #eye-r", {duration: 0.2, ease: "power4.out", rotate: 0, 
+transformOrigin: "50% 50%"}, 0);
+t10.to("#svg-4-2 #eye-l", {duration: 0.2, ease: "power4.out", rotate: -10, 
+transformOrigin: "50% 50%"}, 0.2);
+t10.to("#svg-4-2 #eye-r", {duration: 0.2, ease: "power4.out", rotate: 10, 
+transformOrigin: "50% 50%"}, 0.2);
+t10.to("#svg-4-2 #droplets", {duration: 1, ease: "power4.out", opacity: 1}, 0.2);
+t10.to("#svg-4-2 #droplets", {duration: 1, ease: "power4.out", opacity: 0}, 1);
+t10.to("#svg-4-2 #droplets", {duration: 2, ease: "power4.out", scale: 1}, 0.2);
+t10.to("#svg-4-2 #spark-l", {duration: 1, ease: "power4.out", opacity: 1}, 1);
+t10.to("#svg-4-2 #spark-l", {duration: 1, ease: "power4.out", opacity: 0}, 1.8);
+t10.to("#svg-4-2 #spark-l", {duration: 2, ease: "power4.out", scale: 1, 
+transformOrigin: "50% 50%"}, 1);
+t10.to("#svg-4-2 #spark-r", {duration: 1, ease: "power4.out", opacity: 1}, 0.5);
+t10.to("#svg-4-2 #spark-r", {duration: 1, ease: "power4.out", opacity: 0}, 1.3);
+t10.to("#svg-4-2 #spark-r", {duration: 2, ease: "power4.out", scale: 1, 
+transformOrigin: "50% 50%"}, 0.5);
+t10.to("#svg-4-2 #wave-l", {duration: 1, ease: "power4.out", opacity: 1}, 0);
+t10.to("#svg-4-2 #wave-l", {duration: 1, ease: "power4.out", opacity: 0}, 1);
+t10.to("#svg-4-2 #wave-l", {duration: 2, ease: "power4.out", x: -10, scaleY: 2, 
+transformOrigin: "50% 50%"}, 0);
+t10.to("#svg-4-2 #wave-r", {duration: 1, ease: "power4.out", opacity: 1}, 1);
+t10.to("#svg-4-2 #wave-r", {duration: 1, ease: "power4.out", opacity: 0}, 2);
+t10.to("#svg-4-2 #wave-r", {duration: 2, ease: "power4.out", x: 10, scaleY: 2, 
+transformOrigin: "50% 50%"}, 1);
+
 ScrollTrigger.create({
   trigger: '#svg-4-3',
   toggleActions: "play pause resume reset",
