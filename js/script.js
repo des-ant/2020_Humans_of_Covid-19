@@ -776,6 +776,57 @@ transformOrigin: "50% 50%"}, 3);
 t8.to("#svg-3-7 #eye-l", {duration: 0.5, ease: "back", rotation: 0, 
 transformOrigin: "50% 50%"}, 3);
 
+var t9 = gsap.timeline({
+  repeat: -1,
+  scrollTrigger: {
+    trigger: '#svg-4-1',
+    toggleActions: "play pause resume reset",
+    endTrigger: '#svg-4-1',
+    start: 'top 80%',
+    end: 'bottom 20%',
+    // markers: true,
+    id: 'svg-4-1'
+  }
+});
+
+t9.to("#svg-4-1 #head", {duration: 2, ease: "power2.out", rotate: -20, 
+transformOrigin: "50% 100%"}, 0);
+t9.to("#svg-4-1 #head", {duration: 2, ease: "power2.out", rotate: 0, 
+transformOrigin: "50% 100%"}, 2);
+t9.to("#svg-4-1 #brow-l", {duration: 1, ease: "power4.out", rotate: 5, 
+transformOrigin: "50% 50%", y: -1}, 0);
+t9.to("#svg-4-1 #brow-l", {duration: 2, ease: "power2.out", rotate: -5, 
+transformOrigin: "50% 50%", y: 0}, 1);
+t9.to("#svg-4-1 #brow-r", {duration: 1, ease: "power4.out", rotate: -5, 
+transformOrigin: "50% 50%", y: -1}, 0);
+t9.to("#svg-4-1 #brow-r", {duration: 2, ease: "power2.out", rotate: 5, 
+transformOrigin: "50% 50%", y: 0}, 1);
+t9.to("#svg-4-1 #head-3", {duration: 2, ease: "power2.out", rotate: 5, 
+transformOrigin: "70% 90%"}, 0);
+t9.to("#svg-4-1 #head-3", {duration: 2, ease: "power2.out", rotate: 0, 
+transformOrigin: "70% 90%"}, 2);
+t9.to("#svg-4-1 #brow-l-2", {duration: 2, ease: "power2.out", rotate: -5, 
+transformOrigin: "50% 50%"}, 0);
+t9.to("#svg-4-1 #brow-l-2", {duration: 2, ease: "power2.out", rotate: 0, 
+transformOrigin: "50% 50%"}, 2);
+t9.to("#svg-4-1 #brow-r-2", {duration: 2, ease: "power2.out", rotate: 5, 
+transformOrigin: "50% 50%"}, 0);
+t9.to("#svg-4-1 #brow-r-2", {duration: 2, ease: "power2.out", rotate: 0, 
+transformOrigin: "50% 50%"}, 2);
+
+var t10 = gsap.timeline({
+  repeat: -1,
+  scrollTrigger: {
+    trigger: '#svg-4-2',
+    toggleActions: "play pause resume reset",
+    endTrigger: '#svg-4-2',
+    start: 'top 80%',
+    end: 'bottom 20%',
+    // markers: true,
+    id: 'svg-4-2'
+  }
+});
+
 ScrollTrigger.create({
   trigger: '#svg-4-3',
   toggleActions: "play pause resume reset",
@@ -794,7 +845,7 @@ ScrollTrigger.create({
   id: 'svg-pin-4-3'
 });
 
-var t9 = gsap.timeline({
+var t11 = gsap.timeline({
   repeat: -1,
   scrollTrigger: {
     trigger: '#svg-4-3',
@@ -807,7 +858,7 @@ var t9 = gsap.timeline({
   }
 });
 
-var t10 = gsap.timeline({
+var t12 = gsap.timeline({
   repeat: -1,
   scrollTrigger: {
     trigger: '#svg-4-5',
@@ -838,7 +889,7 @@ ScrollTrigger.create({
   id: 'svg-pin-5-1'
 });
 
-var t11 = gsap.timeline({
+var t13 = gsap.timeline({
   repeat: -1,
   scrollTrigger: {
     trigger: '#svg-5-1',
@@ -869,7 +920,7 @@ ScrollTrigger.create({
   id: 'svg-pin-6-1'
 });
 
-var t12 = gsap.timeline({
+var t14 = gsap.timeline({
   repeat: -1,
   scrollTrigger: {
     trigger: '#svg-6-1',
@@ -882,7 +933,7 @@ var t12 = gsap.timeline({
   }
 });
 
-var t13 = gsap.timeline({
+var t15 = gsap.timeline({
   repeat: -1,
   scrollTrigger: {
     trigger: '#svg-8-1',
