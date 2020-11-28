@@ -11,13 +11,13 @@ gsap.to("progress", {
   scrollTrigger: { scrub: 0.3 }
 });
 
-// Navigation bar
-gsap.utils.toArray("nav ol li a").forEach(function (a) {
-  a.addEventListener("click", function (e) {
-    e.preventDefault();
-    gsap.to(window, { duration: 0.5, scrollTo: e.target.getAttribute("href") });
-  });
-});
+// // Navigation bar
+// gsap.utils.toArray("nav ol li a").forEach(function (a) {
+//   a.addEventListener("click", function (e) {
+//     e.preventDefault();
+//     gsap.to(window, { duration: 0.5, scrollTo: e.target.getAttribute("href") });
+//   });
+// });
 
 /* Set the left margin of the sidebar to 0 to make it visible on screen */
 function openNav() {
