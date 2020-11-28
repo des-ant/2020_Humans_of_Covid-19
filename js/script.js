@@ -575,6 +575,7 @@ ScrollTrigger.create({
 
 var t6 = gsap.timeline({
   repeat: -1,
+  repeatDelay: 0.5,
   scrollTrigger: {
     trigger: '#svg-3-2',
     toggleActions: "play pause resume reset",
@@ -585,6 +586,34 @@ var t6 = gsap.timeline({
     id: 'svg-3-2'
   }
 });
+
+// Sigh
+t6.to("#svg-3-2 #head", {duration: 1, ease: "power4.out", rotate: 20, 
+transformOrigin: "50% 100%"}, 0);
+t6.to("#svg-3-2 #head", {duration: 2, ease: "power2.out", rotate: 0, 
+transformOrigin: "50% 100%"}, 1);
+t6.to("#svg-3-2 #brow-l", {duration: 1, ease: "power4.out", rotate: 10, 
+transformOrigin: "50% 50%", y: -3}, 0);
+t6.to("#svg-3-2 #brow-l", {duration: 2, ease: "power2.out", rotate: -10, 
+transformOrigin: "50% 50%", y: 0}, 1);
+t6.to("#svg-3-2 #brow-r", {duration: 1, ease: "power4.out", rotate: -10, 
+transformOrigin: "50% 50%", y: -3}, 0);
+t6.to("#svg-3-2 #brow-r", {duration: 2, ease: "power2.out", rotate: 10, 
+transformOrigin: "50% 50%", y: 0}, 1);
+t6.to("#svg-3-2 #shoulder-l", {duration: 1, ease: "power4.out", y: -5}, 0);
+t6.to("#svg-3-2 #shoulder-l", {duration: 2, ease: "power2.out", y: 0}, 1);
+t6.to("#svg-3-2 #shoulder-r", {duration: 1, ease: "power4.out", y: -5}, 0);
+t6.to("#svg-3-2 #shoulder-r", {duration: 2, ease: "power2.out", y: 0}, 1);
+t6.to("#svg-3-2 #arm-l", {duration: 1, ease: "power4.out", y: -5}, 0);
+t6.to("#svg-3-2 #arm-l", {duration: 2, ease: "power2.out", y: 0}, 1);
+t6.to("#svg-3-2 #arm-r", {duration: 1, ease: "power4.out", y: -5}, 0);
+t6.to("#svg-3-2 #arm-r", {duration: 2, ease: "power2.out", y: 0}, 1);
+t6.to("#svg-3-2 #shirt", {duration: 1, ease: "power4.out", y: -5}, 0);
+t6.to("#svg-3-2 #shirt", {duration: 2, ease: "power2.out", y: 0}, 1);
+t6.to("#svg-3-2 #hair-r", {duration: 1, ease: "back", rotate: -5, 
+transformOrigin: "5% 20%"}, 1);
+t6.to("#svg-3-2 #hair-r", {duration: 1, ease: "back", rotate: 0, 
+transformOrigin: "5% 20%"}, 2);
 
 ScrollTrigger.create({
   trigger: '#svg-3-5',
