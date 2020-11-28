@@ -371,6 +371,81 @@ var t4 = gsap.timeline({
   }
 });
 
+// Animate eye brows
+// State 1
+t4.to("#svg-2-5 #brow-r", {duration: 1, ease: "power4.out", rotation: 10, 
+transformOrigin: "50% 50%"}, 0);
+t4.to("#svg-2-5 #brow-l", {duration: 1, ease: "power4.out", rotation: -10, 
+transformOrigin: "50% 50%"}, 0);
+// State 2
+t4.to("#svg-2-5 #brow-r", {duration: 0.5, ease: "back", rotation: 0, 
+transformOrigin: "50% 50%"}, 3);
+t4.to("#svg-2-5 #brow-l", {duration: 0.5, ease: "back", rotation: 0, 
+transformOrigin: "50% 50%"}, 3);
+// Animate eyes
+// State 1
+t4.to("#svg-2-5 #eye-r", {duration: 1, ease: "power4.out", rotation: 10, 
+transformOrigin: "50% 50%"}, 0);
+t4.to("#svg-2-5 #eye-l", {duration: 1, ease: "power4.out", rotation: -10, 
+transformOrigin: "50% 50%"}, 0);
+// Blink 1
+t4.to("#svg-2-5 #pupil-r", {duration: 0.1, ease: "power4.out", scaleY: 0, 
+transformOrigin: "50% 100%"}, 1);
+t4.to("#svg-2-5 #lid-r", {duration: 0.1, ease: "power4.out", y: 4}, 1);
+t4.to("#svg-2-5 #pupil-r", {duration: 0.1, ease: "power4.out", scaleY: 1, 
+transformOrigin: "50% 100%"}, 1.1);
+t4.to("#svg-2-5 #lid-r", {duration: 0.1, ease: "power4.out", y: 0}, 1.1);
+// L eye
+t4.to("#svg-2-5 #pupil-l", {duration: 0.1, ease: "power4.out", scaleY: 0, 
+transformOrigin: "50% 100%"}, 1);
+t4.to("#svg-2-5 #lid-l", {duration: 0.1, ease: "power4.out", y: 4}, 1);
+t4.to("#svg-2-5 #pupil-l", {duration: 0.1, ease: "power4.out", scaleY: 1, 
+transformOrigin: "50% 100%"}, 1.1);
+t4.to("#svg-2-5 #lid-l", {duration: 0.1, ease: "power4.out", y: 0}, 1.1);
+// Blink 2
+t4.to("#svg-2-5 #pupil-r", {duration: 0.1, ease: "power4.out", scaleY: 0, 
+transformOrigin: "50% 100%"}, 1.75);
+t4.to("#svg-2-5 #lid-r", {duration: 0.1, ease: "power4.out", y: 4}, 1.75);
+t4.to("#svg-2-5 #pupil-r", {duration: 0.1, ease: "power4.out", scaleY: 1, 
+transformOrigin: "50% 100%"}, 1.85);
+t4.to("#svg-2-5 #lid-r", {duration: 0.1, ease: "power4.out", y: 0}, 1.85);
+// L eye
+t4.to("#svg-2-5 #pupil-l", {duration: 0.1, ease: "power4.out", scaleY: 0, 
+transformOrigin: "50% 100%"}, 1.75);
+t4.to("#svg-2-5 #lid-l", {duration: 0.1, ease: "power4.out", y: 4}, 1.75);
+t4.to("#svg-2-5 #pupil-l", {duration: 0.1, ease: "power4.out", scaleY: 1, 
+transformOrigin: "50% 100%"}, 1.85);
+t4.to("#svg-2-5 #lid-l", {duration: 0.1, ease: "power4.out", y: 0}, 1.85);
+// State 2
+t4.to("#svg-2-5 #eye-r", {duration: 0.5, ease: "back", rotation: 0, 
+transformOrigin: "50% 50%"}, 3);
+t4.to("#svg-2-5 #eye-l", {duration: 0.5, ease: "back", rotation: 0, 
+transformOrigin: "50% 50%"}, 3);
+// Squiggly lines
+var t4s = gsap.timeline({
+  repeat: 7,
+});
+t4.add(t4s, 0);
+t4s.set("#svg-2-5 #ball-1", {opacity: 0});
+t4s.set("#svg-2-5 #ball-2", {opacity: 0});
+t4s.set("#svg-2-5 #ball-3", {opacity: 0});
+t4s.set("#svg-2-5 #wave-l", {opacity: 0});
+t4s.set("#svg-2-5 #wave-r", {opacity: 0});
+t4s.to("#svg-2-5 #ball-1", {duration: 0.1, ease: "power4.out", opacity: 1}, 0);
+t4s.to("#svg-2-5 #ball-1", {duration: 0.1, ease: "power4.out", opacity: 0}, 0.1);
+t4s.to("#svg-2-5 #ball-2", {duration: 0.1, ease: "power4.out", opacity: 1}, 0.1);
+t4s.to("#svg-2-5 #ball-2", {duration: 0.1, ease: "power4.out", opacity: 0}, 0.2);
+t4s.to("#svg-2-5 #ball-3", {duration: 0.1, ease: "power4.out", opacity: 1}, 0.2);
+t4s.to("#svg-2-5 #ball-4", {duration: 0.1, ease: "power4.out", opacity: 0}, 0.3);
+t4.to("#svg-2-5 #wave-l", {duration: 1, ease: "power4.out", opacity: 1}, 0);
+t4.to("#svg-2-5 #wave-l", {duration: 1, ease: "power4.out", opacity: 0}, 1);
+t4.to("#svg-2-5 #wave-l", {duration: 2, ease: "power4.out", x: -10, scaleY: 2, 
+transformOrigin: "50% 50%"}, 0);
+t4.to("#svg-2-5 #wave-r", {duration: 1, ease: "power4.out", opacity: 1}, 1);
+t4.to("#svg-2-5 #wave-r", {duration: 1, ease: "power4.out", opacity: 0}, 2);
+t4.to("#svg-2-5 #wave-r", {duration: 2, ease: "power4.out", x: 10, scaleY: 2, 
+transformOrigin: "50% 50%"}, 1);
+
 var t5 = gsap.timeline({
   repeat: -1,
   scrollTrigger: {
