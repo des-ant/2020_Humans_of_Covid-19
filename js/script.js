@@ -1,5 +1,5 @@
 
-gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+gsap.registerPlugin(MotionPathPlugin, ScrollTrigger, ScrollToPlugin);
 
 // Scroll down arrow animation
 gsap.to(".arrow", { y: 12, ease: "power1.inOut", repeat: -1, yoyo: true });
@@ -164,6 +164,100 @@ var t2 = gsap.timeline({
     id: 'svg-2-1'
   }
 });
+
+// Spinning stars
+var t2s = gsap.timeline({
+  repeat: 1,
+});
+t2.add(t2s, 0);
+t2s.set("#svg-2-1 #star-l-front", {opacity: 0, scale: 0.8});
+t2s.set("#svg-2-1 #star-r-front", {opacity: 0, scale: 0.8});
+t2s.to("#svg-2-1 #star-l-front", {
+  motionPath: {
+      path: "#svg-2-1 #path-l",
+      align: "#svg-2-1 #path-l",
+      alignOrigin: [0.5, 0.5],
+      autoRotate: true
+  },
+  duration: 2,
+  ease: "sine.inOut"
+}, 0);
+t2s.to("#svg-2-1 #star-l-front", {duration: 0.1, opacity: 1, ease: "none"}, 0.7);
+t2s.to("#svg-2-1 #star-l-front", {duration: 1, scale: 1.3, ease: "sine.in"}, 0);
+t2s.to("#svg-2-1 #star-l-front", {duration: 1, scale: 0.5, ease: "sine.out"}, 1);
+t2s.to("#svg-2-1 #star-l-front", {duration: 0.1, opacity: 0, ease: "none"}, 1.3);
+t2s.to("#svg-2-1 #star-l-back", {
+  motionPath: {
+      path: "#svg-2-1 #path-l",
+      align: "#svg-2-1 #path-l",
+      alignOrigin: [0.5, 0.5],
+      autoRotate: true
+  },
+  duration: 2,
+  ease: "sine.inOut"
+}, 0);
+t2s.to("#svg-2-1 #star-l-back", {duration: 0.1, opacity: 0, ease: "none"}, 0.7);
+t2s.to("#svg-2-1 #star-l-back", {duration: 1, scale: 1.3, ease: "sine.in"}, 0);
+t2s.to("#svg-2-1 #star-l-back", {duration: 1, scale: 0.5, ease: "sine.out"}, 1);
+t2s.to("#svg-2-1 #star-l-back", {duration: 0.1, opacity: 1, ease: "none"}, 1.3);
+// Star R
+t2s.to("#svg-2-1 #star-r-front", {
+  motionPath: {
+      path: "#svg-2-1 #path-r",
+      align: "#svg-2-1 #path-r",
+      alignOrigin: [0.5, 0.5],
+      start: 1,
+      end: 0,
+      autoRotate: true
+  },
+  duration: 2,
+  ease: "sine.outIn"
+}, 0);
+t2s.to("#svg-2-1 #star-r-front", {duration: 0.1, opacity: 1, ease: "none"}, 0.3);
+t2s.to("#svg-2-1 #star-r-front", {duration: 1, scale: 1.3, ease: "sine.out"}, 0);
+t2s.to("#svg-2-1 #star-r-front", {duration: 1, scale: 0.5, ease: "sine.in"}, 1);
+t2s.to("#svg-2-1 #star-r-front", {duration: 0.1, opacity: 0, ease: "none"}, 1);
+t2s.to("#svg-2-1 #star-r-back", {
+  motionPath: {
+      path: "#svg-2-1 #path-r",
+      align: "#svg-2-1 #path-r",
+      alignOrigin: [0.5, 0.5],
+      start: 1,
+      end: 0,
+      autoRotate: true
+  },
+  duration: 2,
+  ease: "sine.outIn"
+}, 0);
+t2s.to("#svg-2-1 #star-r-back", {duration: 0.1, opacity: 0, ease: "none"}, 0.3);
+t2s.to("#svg-2-1 #star-r-back", {duration: 1, scale: 1.3, ease: "sine.out"}, 0);
+t2s.to("#svg-2-1 #star-r-back", {duration: 1, scale: 0.5, ease: "sine.in"}, 1);
+t2s.to("#svg-2-1 #star-r-back", {duration: 0.1, opacity: 1, ease: "none"}, 1);
+// Rotate head
+// Animate eye brows
+// State 1
+t2.to("#svg-2-1 #brow-r", {duration: 1, ease: "power4.out", rotation: 10, 
+transformOrigin: "50% 50%"}, 1.5);
+t2.to("#svg-2-1 #brow-l", {duration: 1, ease: "power4.out", rotation: -10, 
+transformOrigin: "50% 50%"}, 1.5);
+// State 2
+t2.to("#svg-2-1 #brow-r", {duration: 1, ease: "back", rotation: 0, 
+transformOrigin: "50% 50%"}, 2.5);
+t2.to("#svg-2-1 #brow-l", {duration: 1, ease: "back", rotation: 0, 
+transformOrigin: "50% 50%"}, 2.5);
+// Rotate body
+t2.to("#svg-2-1 #girl", {duration: 1, ease: "back", rotation: 5, 
+transformOrigin: "50% 90%"}, 0);
+t2.to("#svg-2-1 #girl", {duration: 1, ease: "back", x: 10}, 0.25);
+t2.to("#svg-2-1 #girl", {duration: 1, ease: "power4", rotation: 0, 
+transformOrigin: "50% 90%"}, 1);
+t2.to("#svg-2-1 #girl", {duration: 1, ease: "back", rotation: -5, 
+transformOrigin: "50% 90%"}, 2);
+t2.to("#svg-2-1 #girl", {duration: 1, ease: "back", x: 0}, 2.25);
+t2.to("#svg-2-1 #girl", {duration: 1, ease: "power4", rotation: 0, 
+transformOrigin: "50% 90%"}, 3);
+
+
 
 var t3 = gsap.timeline({
   repeat: -1,
