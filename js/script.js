@@ -1002,6 +1002,30 @@ var t12 = gsap.timeline({
   }
 });
 
+// Breathe
+t12.to("#svg-4-5 #top", {duration: 2, ease: "back", scaleY: 1.05, scaleX: 1.025, 
+transformOrigin: "50% 50%"}, 0);
+t12.to("#svg-4-5 #top", {duration: 2, ease: "back", scaleY: 1, scaleX: 1,
+transformOrigin: "50% 50%"}, 2);
+t12.to("#svg-4-5 #neck", {duration: 2, ease: "back", scaleY: 0.9, 
+transformOrigin: "50% 0%"}, 0);
+t12.to("#svg-4-5 #neck", {duration: 2, ease: "back", scaleY: 1,
+transformOrigin: "50% 0%"}, 2);
+t12.to("#svg-4-5 #arm-l", {duration: 2, ease: "back", y: -5, x: -2}, 0);
+t12.to("#svg-4-5 #arm-l", {duration: 2, ease: "back", y: 0, x: 0}, 2);
+t12.to("#svg-4-5 #arm-r", {duration: 2, ease: "back", y: -5, x: 2}, 0);
+t12.to("#svg-4-5 #arm-r", {duration: 2, ease: "back", y: 0, x: 0}, 2);
+t12.to("#svg-4-5 #hair-l", {duration: 2, ease: "back", rotate: -5, 
+transformOrigin: "90% 10%"}, 0);
+t12.to("#svg-4-5 #hair-r", {duration: 2, ease: "back", rotate: 5, 
+transformOrigin: "20% 10%"}, 0);
+t12.to("#svg-4-5 #hair-l", {duration: 2, ease: "back", rotate: 0, 
+transformOrigin: "90% 10%"}, 2);
+t12.to("#svg-4-5 #hair-r", {duration: 2, ease: "back", rotate: 0, 
+transformOrigin: "20% 10%"}, 2);
+t12.to("#svg-4-5 #hair-back", {duration: 2, ease: "back", y: -5, x: -2}, 0);
+t12.to("#svg-4-5 #hair-back", {duration: 2, ease: "back", y: 0, x: 0}, 2);
+
 ScrollTrigger.create({
   trigger: '#svg-5-1',
   toggleActions: "play pause resume reset",
