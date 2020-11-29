@@ -790,9 +790,9 @@ var t9 = gsap.timeline({
 });
 
 t9.to("#svg-4-1 #head", {duration: 2, ease: "power2.out", rotate: -20, 
-transformOrigin: "50% 100%"}, 0);
+transformOrigin: "50% 90%"}, 0);
 t9.to("#svg-4-1 #head", {duration: 2, ease: "power2.out", rotate: 0, 
-transformOrigin: "50% 100%"}, 2);
+transformOrigin: "50% 90%"}, 2);
 t9.to("#svg-4-1 #brow-l", {duration: 1, ease: "power4.out", rotate: 5, 
 transformOrigin: "50% 50%", y: -1}, 0);
 t9.to("#svg-4-1 #brow-l", {duration: 2, ease: "power2.out", rotate: -5, 
