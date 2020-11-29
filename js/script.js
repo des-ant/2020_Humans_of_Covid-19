@@ -1057,6 +1057,90 @@ var t13 = gsap.timeline({
   }
 });
 
+// Animate eye brows
+// State 1
+t13.to("#svg-5-1 #brow-r-2", {duration: 1, ease: "power4.out", rotation: 10, 
+transformOrigin: "50% 50%"}, 0);
+t13.to("#svg-5-1 #brow-l-2", {duration: 1, ease: "power4.out", rotation: -10, 
+transformOrigin: "50% 50%"}, 0);
+// State 2
+t13.to("#svg-5-1 #brow-r-2", {duration: 0.5, ease: "back", rotation: 0, 
+transformOrigin: "50% 50%"}, 3);
+t13.to("#svg-5-1 #brow-l-2", {duration: 0.5, ease: "back", rotation: 0, 
+transformOrigin: "50% 50%"}, 3);
+// Animate eyes
+// State 1
+t13.to("#svg-5-1 #eye-r-2", {duration: 1, ease: "power4.out", rotation: 10, 
+transformOrigin: "50% 50%"}, 0);
+t13.to("#svg-5-1 #eye-l-2", {duration: 1, ease: "power4.out", rotation: -10, 
+transformOrigin: "50% 50%"}, 0);
+// Blink 1
+t13.to("#svg-5-1 #pupil-r", {duration: 0.1, ease: "power4.out", scaleY: 0, 
+transformOrigin: "50% 100%"}, 1);
+t13.to("#svg-5-1 #lid-r", {duration: 0.1, ease: "power4.out", y: 4}, 1);
+t13.to("#svg-5-1 #pupil-r", {duration: 0.1, ease: "power4.out", scaleY: 1, 
+transformOrigin: "50% 100%"}, 1.1);
+t13.to("#svg-5-1 #lid-r", {duration: 0.1, ease: "power4.out", y: 0}, 1.1);
+// L eye
+t13.to("#svg-5-1 #pupil-l", {duration: 0.1, ease: "power4.out", scaleY: 0, 
+transformOrigin: "50% 100%"}, 1);
+t13.to("#svg-5-1 #lid-l", {duration: 0.1, ease: "power4.out", y: 4}, 1);
+t13.to("#svg-5-1 #pupil-l", {duration: 0.1, ease: "power4.out", scaleY: 1, 
+transformOrigin: "50% 100%"}, 1.1);
+t13.to("#svg-5-1 #lid-l", {duration: 0.1, ease: "power4.out", y: 0}, 1.1);
+// Blink 2
+t13.to("#svg-5-1 #pupil-r", {duration: 0.1, ease: "power4.out", scaleY: 0, 
+transformOrigin: "50% 100%"}, 1.75);
+t13.to("#svg-5-1 #lid-r", {duration: 0.1, ease: "power4.out", y: 4}, 1.75);
+t13.to("#svg-5-1 #pupil-r", {duration: 0.1, ease: "power4.out", scaleY: 1, 
+transformOrigin: "50% 100%"}, 1.85);
+t13.to("#svg-5-1 #lid-r", {duration: 0.1, ease: "power4.out", y: 0}, 1.85);
+// L eye
+t13.to("#svg-5-1 #pupil-l", {duration: 0.1, ease: "power4.out", scaleY: 0, 
+transformOrigin: "50% 100%"}, 1.75);
+t13.to("#svg-5-1 #lid-l", {duration: 0.1, ease: "power4.out", y: 4}, 1.75);
+t13.to("#svg-5-1 #pupil-l", {duration: 0.1, ease: "power4.out", scaleY: 1, 
+transformOrigin: "50% 100%"}, 1.85);
+t13.to("#svg-5-1 #lid-l", {duration: 0.1, ease: "power4.out", y: 0}, 1.85);
+// State 2
+t13.to("#svg-5-1 #eye-r-2", {duration: 0.5, ease: "back", rotation: 0, 
+transformOrigin: "50% 50%"}, 3);
+t13.to("#svg-5-1 #eye-l-2", {duration: 0.5, ease: "back", rotation: 0, 
+transformOrigin: "50% 50%"}, 3);
+// Husband
+// Animate eye brows
+// State 1
+t13.to("#svg-5-1 #brow-r", {duration: 1, ease: "power4.out", rotation: 10, 
+transformOrigin: "50% 50%"}, 0.5);
+t13.to("#svg-5-1 #brow-l", {duration: 1, ease: "power4.out", rotation: -10, 
+transformOrigin: "50% 50%"}, 0.5);
+// State 2
+t13.to("#svg-5-1 #brow-r", {duration: 0.5, ease: "back", rotation: 0, 
+transformOrigin: "50% 50%"}, 3.5);
+t13.to("#svg-5-1 #brow-l", {duration: 0.5, ease: "back", rotation: 0, 
+transformOrigin: "50% 50%"}, 3.5);
+// Animate eyes
+// Blink 1
+t13.to("#svg-5-1 #eye-r", {duration: 0.1, ease: "power4.out", scaleY: 0, 
+transformOrigin: "50% 100%"}, 1.5);
+t13.to("#svg-5-1 #eye-r", {duration: 0.1, ease: "power4.out", scaleY: 1, 
+transformOrigin: "50% 100%"}, 1.6);
+// L eye
+t13.to("#svg-5-1 #eye-l", {duration: 0.1, ease: "power4.out", scaleY: 0, 
+transformOrigin: "50% 100%"}, 1.5);
+t13.to("#svg-5-1 #eye-l", {duration: 0.1, ease: "power4.out", scaleY: 1, 
+transformOrigin: "50% 100%"}, 1.6);
+// Blink 2
+t13.to("#svg-5-1 #eye-r", {duration: 0.1, ease: "power4.out", scaleY: 0, 
+transformOrigin: "50% 100%"}, 2.25);
+t13.to("#svg-5-1 #eye-r", {duration: 0.1, ease: "power4.out", scaleY: 1, 
+transformOrigin: "50% 100%"}, 2.35);
+// L eye
+t13.to("#svg-5-1 #eye-l", {duration: 0.1, ease: "power4.out", scaleY: 0, 
+transformOrigin: "50% 100%"}, 2.25);
+t13.to("#svg-5-1 #eye-l", {duration: 0.1, ease: "power4.out", scaleY: 1, 
+transformOrigin: "50% 100%"}, 2.35);
+
 ScrollTrigger.create({
   trigger: '#svg-6-1',
   toggleActions: "play pause resume reset",
@@ -1077,6 +1161,7 @@ ScrollTrigger.create({
 
 var t14 = gsap.timeline({
   repeat: -1,
+  repeatDelay: 1,
   scrollTrigger: {
     trigger: '#svg-6-1',
     toggleActions: "play pause resume reset",
@@ -1088,8 +1173,39 @@ var t14 = gsap.timeline({
   }
 });
 
+// Animate eyes
+// Blink 1
+t14.to("#svg-6-1 #pupil-r", {duration: 0.1, ease: "power4.out", scaleY: 0, 
+transformOrigin: "50% 100%"}, 1);
+t14.to("#svg-6-1 #lid-r", {duration: 0.1, ease: "power4.out", y: 4}, 1);
+t14.to("#svg-6-1 #pupil-r", {duration: 0.1, ease: "power4.out", scaleY: 1, 
+transformOrigin: "50% 100%"}, 1.1);
+t14.to("#svg-6-1 #lid-r", {duration: 0.1, ease: "power4.out", y: 0}, 1.1);
+// L eye
+t14.to("#svg-6-1 #pupil-l", {duration: 0.1, ease: "power4.out", scaleY: 0, 
+transformOrigin: "50% 100%"}, 1);
+t14.to("#svg-6-1 #lid-l", {duration: 0.1, ease: "power4.out", y: 4}, 1);
+t14.to("#svg-6-1 #pupil-l", {duration: 0.1, ease: "power4.out", scaleY: 1, 
+transformOrigin: "50% 100%"}, 1.1);
+t14.to("#svg-6-1 #lid-l", {duration: 0.1, ease: "power4.out", y: 0}, 1.1);
+// Blink 2
+t14.to("#svg-6-1 #pupil-r", {duration: 0.1, ease: "power4.out", scaleY: 0, 
+transformOrigin: "50% 100%"}, 1.75);
+t14.to("#svg-6-1 #lid-r", {duration: 0.1, ease: "power4.out", y: 4}, 1.75);
+t14.to("#svg-6-1 #pupil-r", {duration: 0.1, ease: "power4.out", scaleY: 1, 
+transformOrigin: "50% 100%"}, 1.85);
+t14.to("#svg-6-1 #lid-r", {duration: 0.1, ease: "power4.out", y: 0}, 1.85);
+// L eye
+t14.to("#svg-6-1 #pupil-l", {duration: 0.1, ease: "power4.out", scaleY: 0, 
+transformOrigin: "50% 100%"}, 1.75);
+t14.to("#svg-6-1 #lid-l", {duration: 0.1, ease: "power4.out", y: 4}, 1.75);
+t14.to("#svg-6-1 #pupil-l", {duration: 0.1, ease: "power4.out", scaleY: 1, 
+transformOrigin: "50% 100%"}, 1.85);
+t14.to("#svg-6-1 #lid-l", {duration: 0.1, ease: "power4.out", y: 0}, 1.85);
+
 var t15 = gsap.timeline({
   repeat: -1,
+  repeatDelay: 1,
   scrollTrigger: {
     trigger: '#svg-8-1',
     toggleActions: "play pause resume reset",
@@ -1101,3 +1217,37 @@ var t15 = gsap.timeline({
   }
 });
 
+// Cough
+var t15c = gsap.timeline({
+  repeat: 1,
+  repeatDelay: 0.5
+});
+t15.add(t15c, 0);
+t15c.to("#svg-8-1 #head", {duration: 0.1, ease: "bounce", x: 5, y: 10}, 0);
+t15c.to("#svg-8-1 #lip", {duration: 0.1, ease: "power4.out", scaleY: 1, 
+transformOrigin: "50% 100%"}, 0);
+t15c.to("#svg-8-1 #hair-l", {duration: 0.2, ease: "back", rotate: 10, 
+transformOrigin: "70% 5%"}, 0);
+t15c.to("#svg-8-1 #arm-r", {duration: 0.2, ease: "back", rotate: 3, 
+transformOrigin: "90% 90%"}, 0);
+t15c.to("#svg-8-1 #tissue", {duration: 0.2, ease: "power4.out", y: -8}, 0);
+t15c.to("#svg-8-1 #hair-r", {duration: 0.2, ease: "back", rotate: -10, 
+transformOrigin: "0% 0%"}, 0);
+t15c.to("#svg-8-1 #brow-l", {duration: 0.2, ease: "power4.out", rotate: 0, 
+transformOrigin: "50% 50%"}, 0);
+t15c.to("#svg-8-1 #brow-r", {duration: 0.2, ease: "power4.out", rotate: 0, 
+transformOrigin: "50% 50%"}, 0);
+t15c.to("#svg-8-1 #head", {duration: 0.1, ease: "bounce", x: 0, y: 0}, 0.1);
+t15c.to("#svg-8-1 #lip", {duration: 0.1, ease: "power4.out", scaleY: 0.2, 
+transformOrigin: "50% 100%"}, 0.1);
+t15c.to("#svg-8-1 #hair-l", {duration: 0.2, ease: "back", rotate: 0, 
+transformOrigin: "70% 5%"}, 0.2);
+t15c.to("#svg-8-1 #arm-r", {duration: 0.2, ease: "back", rotate: 0, 
+transformOrigin: "90% 90%"}, 0.2);
+t15c.to("#svg-8-1 #tissue", {duration: 0.2, ease: "back", y: 0}, 0.2);
+t15c.to("#svg-8-1 #hair-r", {duration: 0.2, ease: "back", rotate: 0, 
+transformOrigin: "0% 0%"}, 0.2);
+t15c.to("#svg-8-1 #brow-l", {duration: 0.2, ease: "power4.out", rotate: -10, 
+transformOrigin: "50% 50%"}, 0.2);
+t15c.to("#svg-8-1 #brow-r", {duration: 0.2, ease: "power4.out", rotate: 10, 
+transformOrigin: "50% 50%"}, 0.2);
