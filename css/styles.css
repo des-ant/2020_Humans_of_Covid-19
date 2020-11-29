@@ -76,6 +76,30 @@ ul {
   list-style-position: inside;
 }
 
+/* Link styling */
+a {
+  /* unvisited link */
+  /* visited link */
+  /* mouse over link */
+  /* selected link */
+}
+
+a:link {
+  color: #6D6466;
+}
+
+a:visited {
+  color: #4E3D42;
+}
+
+a:hover {
+  color: #9F9F92;
+}
+
+a:active {
+  color: #C9D5B5;
+}
+
 /* ####################### */
 /* Styles for page content */
 /* ####################### */

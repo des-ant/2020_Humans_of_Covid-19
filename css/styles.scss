@@ -106,6 +106,26 @@ ul {
 
 }
 
+/* Link styling */
+a {
+  /* unvisited link */
+  &:link {
+    color: $coolors-2;
+  }
+  /* visited link */
+  &:visited {
+    color: $coolors-1;
+  }
+  /* mouse over link */
+  &:hover {
+    color: $coolors-3;
+  }
+  /* selected link */
+  &:active {
+    color: $coolors-4;
+  }
+}
+
 /* ####################### */
 /* Styles for page content */
 /* ####################### */
