@@ -309,6 +309,7 @@ progress::-moz-progress-bar {
   font-size: 1em;
   -webkit-box-shadow: 2px 2px rgba(0, 0, 0, 0.25);
           box-shadow: 2px 2px rgba(0, 0, 0, 0.25);
+  margin-top: 1.625em;
 }
 
 #myBtn:hover {
